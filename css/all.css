@@ -82,11 +82,11 @@
 
 /* Submit */
 .button-submit {
-	padding: 12px 20px; -webkit-border-radius: 3px; -moz-border-radius: 3px; -o-border-radius: 3px; -ms-border-radius: 3px; -webkit-border-radius: 3px; -moz-border-radius: 3px; -o-border-radius: 3px; -ms-border-radius: 3px; border-radius: 3px ; margin-top: 11px; background: rgb(112, 48, 160);
+	padding: 12px 20px; -webkit-border-radius: 3px; -moz-border-radius: 3px; -o-border-radius: 3px; -ms-border-radius: 3px; -webkit-border-radius: 3px; -moz-border-radius: 3px; -o-border-radius: 3px; -ms-border-radius: 3px; border-radius: 3px ; margin-top: 11px; background: rgb(245, 76, 25);
 	/* -webkit-box-shadow: 0px 1px 4px rgba(93, 104, 255, 0.41); -moz-box-shadow: 0px 1px 4px rgba(93, 104, 255, 0.41); -o-box-shadow: 0px 1px 4px rgba(93, 104, 255, 0.41); -ms-box-shadow: 0px 1px 4px rgba(93, 104, 255, 0.41); box-shadow: 0px 1px 4px rgba(93, 104, 255, 0.41) ; */
 	border: none; border-bottom: 2px solid rgba(0, 0, 0, 0.5); font-weight: bold; color: #ffffff; font-size: 12px; text-transform: uppercase;
 }
-.button-submit:hover { background: rgb(112, 48, 160); -webkit-box-shadow: inset 0 0 0 5px rgba(0, 0, 0, 0.5) !important; -moz-box-shadow: inset 0 0 0 5px rgba(0, 0, 0, 0.5) !important; -o-box-shadow: inset 0 0 0 5px rgba(0, 0, 0, 0.5) !important; -ms-box-shadow: inset 0 0 0 5px rgba(0, 0, 0, 0.5) !important; -webkit-box-shadow: inset 0 0 0 5px rgba(0, 0, 0, 0.5) !important; -moz-box-shadow: inset 0 0 0 5px rgba(0, 0, 0, 0.5) !important; -o-box-shadow: inset 0 0 0 5px rgba(0, 0, 0, 0.5) !important; -ms-box-shadow: inset 0 0 0 5px rgba(0, 0, 0, 0.5) !important; box-shadow: inset 0 0 0 5px rgba(0, 0, 0, 0.5) !important ; padding: 13px 20px; border: none }
+.button-submit:hover { background: rgb(245, 76, 25); -webkit-box-shadow: inset 0 0 0 5px rgba(0, 0, 0, 0.5) !important; -moz-box-shadow: inset 0 0 0 5px rgba(0, 0, 0, 0.5) !important; -o-box-shadow: inset 0 0 0 5px rgba(0, 0, 0, 0.5) !important; -ms-box-shadow: inset 0 0 0 5px rgba(0, 0, 0, 0.5) !important; -webkit-box-shadow: inset 0 0 0 5px rgba(0, 0, 0, 0.5) !important; -moz-box-shadow: inset 0 0 0 5px rgba(0, 0, 0, 0.5) !important; -o-box-shadow: inset 0 0 0 5px rgba(0, 0, 0, 0.5) !important; -ms-box-shadow: inset 0 0 0 5px rgba(0, 0, 0, 0.5) !important; box-shadow: inset 0 0 0 5px rgba(0, 0, 0, 0.5) !important ; padding: 13px 20px; border: none }
 
 .button-submit.button-small:hover {
     padding: 8px 20px;
@@ -171,7 +171,7 @@
 
 .head-container { background-color: white; -webkit-box-shadow: 0 0 15px 1px black; -moz-box-shadow: 0 0 15px 1px black; -o-box-shadow: 0 0 15px 1px black; -ms-box-shadow: 0 0 15px 1px black; box-shadow: 0 0 15px 1px black ; max-height: 50px; }
 .head-container:hover { -webkit-box-shadow: 0px 0px 25px 5px #000; -moz-box-shadow: 0px 0px 25px 5px #000; -o-box-shadow: 0px 0px 25px 5px #000; -ms-box-shadow: 0px 0px 25px 5px #000; box-shadow: 0px 0px 25px 5px #000 ; }
-.sticky-header .head-container { width: 100%; position: fixed; z-index: 2; }
+.sticky-header .head-container { width: 100%; position: fixed; z-index: 8091771440; }
 .head .logo {
 	height: 50px; padding: 4px 6px; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; -o-box-sizing: border-box; -ms-box-sizing: border-box; box-sizing: border-box ; display: inline-block;
 	color: white; font-size: 30px; font-weight: lighter; text-decoration: none; vertical-align: top;
@@ -187,7 +187,7 @@ body:not(.logo-left) .head .logo { width: 42%; }
 	display: inline-block; height: 50px; width: 50px; text-align: center; vertical-align: middle; -webkit-transition: all 0.3s; -moz-transition: all 0.3s; -o-transition: all 0.3s; -ms-transition: all 0.3s; transition: all 0.3s ;
 	border-left: 1px solid #EEE; line-height: 50px; font-size: 20px; color: #AAA; font-weight: normal; text-decoration: none;
 }
-.head .settings:hover { color: #fff; background-color: rgb(112, 48, 160); -webkit-transition: none ; -moz-transition: none ; -o-transition: none ; -ms-transition: none ; transition: none  }
+.head .settings:hover { color: #fff; background-color: rgb(245, 76, 25); -webkit-transition: none ; -moz-transition: none ; -o-transition: none ; -ms-transition: none ; transition: none  }
 .head .settings:active { -webkit-filter: opacity(0.5); -moz-filter: opacity(0.5); -o-filter: opacity(0.5); -ms-filter: opacity(0.5); filter: opacity(0.5) ; -webkit-transition: none ; -moz-transition: none ; -o-transition: none ; -ms-transition: none ; transition: none  }
 .head .menu { -webkit-box-shadow: 0px 4px 8px rgba(0,0,0,0.1) ; -moz-box-shadow: 0px 4px 8px rgba(0,0,0,0.1) ; -o-box-shadow: 0px 4px 8px rgba(0,0,0,0.1) ; -ms-box-shadow: 0px 4px 8px rgba(0,0,0,0.1) ; box-shadow: 0px 4px 8px rgba(0,0,0,0.1)  }
 
@@ -195,7 +195,7 @@ body:not(.logo-left) .head .logo { width: 42%; }
 .head ul { list-style-type:none; display: inline-block; margin:0; padding:0; overflow:hidden; }
 .head ul li, .head ul li a { display: block; text-align: center; color: #AAA; }
 .head ul li:hover, .head ul li a:hover {
-	background-color: rgb(112, 48, 160); -webkit-transition: none; -moz-transition: none; -o-transition: none; -ms-transition: none; transition: none ; color: #fff; text-decoration: none;
+	background-color: rgb(245, 76, 25); -webkit-transition: none; -moz-transition: none; -o-transition: none; -ms-transition: none; transition: none ; color: #fff; text-decoration: none;
 }
 .head ul li:active, .head ul li a:active {
     -webkit-filter: opacity(0.5); -moz-filter: opacity(0.5); -o-filter: opacity(0.5); -ms-filter: opacity(0.5); filter: opacity(0.5) ;
@@ -242,7 +242,7 @@ body:not(.logo-left) .head .logo { width: 42%; }
 .menu-item { display: block; text-decoration: none; color: black; padding: 6px 24px; -webkit-transition: all 0.2s; -moz-transition: all 0.2s; -o-transition: all 0.2s; -ms-transition: all 0.2s; transition: all 0.2s ; border-bottom: none; font-weight: normal; padding-left: 32px; white-space: nowrap; }
 .menu-item-separator { margin-top: 3px; margin-bottom: 3px; border-top: 1px solid #eee }
 
-.menu-item:hover { background-color: rgb(112, 48, 160); -webkit-transition: none; -moz-transition: none; -o-transition: none; -ms-transition: none; transition: none ; color: inherit; cursor: pointer; color: #fff; text-decoration: none }
+.menu-item:hover { background-color: rgb(245, 76, 25); -webkit-transition: none; -moz-transition: none; -o-transition: none; -ms-transition: none; transition: none ; color: inherit; cursor: pointer; color: #fff; text-decoration: none }
 .menu-item:active, .menu-item:focus { -webkit-filter: opacity(0.5); -moz-filter: opacity(0.5); -o-filter: opacity(0.5); -ms-filter: opacity(0.5); filter: opacity(0.5) ; -webkit-transition: none ; -moz-transition: none ; -o-transition: none ; -ms-transition: none ; transition: none  }
 .menu-item.selected:before {
 	content: "L"; display: inline-block; -webkit-transform: rotateZ(45deg) scaleX(-1); -moz-transform: rotateZ(45deg) scaleX(-1); -o-transform: rotateZ(45deg) scaleX(-1); -ms-transform: rotateZ(45deg) scaleX(-1); transform: rotateZ(45deg) scaleX(-1) ; line-height: 15px;
@@ -291,10 +291,10 @@ body:not(.logo-left) .head .logo { width: 42%; }
 .post .actions .icon { margin-right: 1px; text-decoration: none }
 .post .actions .link { color: #AAA; font-size: 12px; height: 30px; vertical-align: middle; line-height: 30px; display: inline-block; padding-right: 10px }
 a.icon.link:hover {
-    color: rgb(112, 48, 160);
+    color: rgb(245, 76, 25);
 }
 a.icon.link:active {
-    background: rgb(112, 48, 160);
+    background: rgb(245, 76, 25);
     color: #fff;
     -webkit-border-radius: 5px; -moz-border-radius: 5px; -o-border-radius: 5px; -ms-border-radius: 5px; border-radius: 5px ;
 }
@@ -350,8 +350,8 @@ textarea { background: rgba(255, 255, 255, 0.5); }
 	margin-right: 10px; padding-bottom: 5px; display: inline-block; border-bottom: 2px solid rgba(0,0,0,0);
 	color: #555; margin-bottom: 7px; margin-top: 10px; margin-left: 10px; transition: all 0.3s
 }
-.post-list-type .active { border-bottom: 2px solid rgb(112, 48, 160); color: rgb(112, 48, 160) }
-.post-list-type a:hover { border-bottom: 2px solid rgb(112, 48, 160); color: rgb(112, 48, 160); -webkit-transition: none; -moz-transition: none; -o-transition: none; -ms-transition: none; transition: none ; text-decoration: none }
+.post-list-type .active { border-bottom: 2px solid rgb(242, 81, 38); color: rgb(242, 81, 38) }
+.post-list-type a:hover { border-bottom: 2px solid rgb(242, 81, 38); color: rgb(242, 81, 38); -webkit-transition: none; -moz-transition: none; -o-transition: none; -ms-transition: none; transition: none ; text-decoration: none }
 
 .post .img { background-size: cover; text-align: center; position: relative; margin-bottom: 10px; }
 .post .img .show {
@@ -454,10 +454,10 @@ textarea { background: rgba(255, 255, 255, 0.5); }
 .users.gray .name { color: #333; }
 
 .user .uploadable .icon-upload { position: absolute; margin-left: -60px; z-index: 1; margin-top: -4px; opacity: 1; background-color: rgba(0, 0, 0, 0.5); background-position: 11px 11px; width: 50px; height: 50px; -webkit-border-radius: 50%; -moz-border-radius: 50%; -o-border-radius: 50%; -ms-border-radius: 50%; border-radius: 50% ; }
-.user .uploadable .icon-upload:hover { -webkit-box-shadow: inset 0 0 0 5px rgb(211, 12, 55) !important ; -moz-box-shadow: inset 0 0 0 5px rgb(211, 12, 55) !important ; -o-box-shadow: inset 0 0 0 5px rgb(211, 12, 55) !important ; -ms-box-shadow: inset 0 0 0 5px rgb(211, 12, 55) !important ; box-shadow: inset 0 0 0 5px rgb(211, 12, 55) !important  }
+.user .uploadable .icon-upload:hover { -webkit-box-shadow: inset 0 0 0 5px rgb(245, 76, 25) !important ; -moz-box-shadow: inset 0 0 0 5px rgb(245, 76, 25) !important ; -o-box-shadow: inset 0 0 0 5px rgb(245, 76, 25) !important ; -ms-box-shadow: inset 0 0 0 5px rgb(245, 76, 25) !important ; box-shadow: inset 0 0 0 5px rgb(245, 76, 25) !important  }
 .bg-preview { -webkit-border-radius: 5px ; -moz-border-radius: 5px ; -o-border-radius: 5px ; -ms-border-radius: 5px ; border-radius: 5px  }
 .bg-settings > .uploadable a.icon.icon-upload { -webkit-border-radius: 0; -moz-border-radius: 0; -o-border-radius: 0; -ms-border-radius: 0; border-radius: 0 ; margin-top: 0px; width: 160px; height: 86px; background-position: 65px 30px; -webkit-border-radius: 5px ; -moz-border-radius: 5px ; -o-border-radius: 5px ; -ms-border-radius: 5px ; border-radius: 5px  }
-.bg-settings > .uploadable a.icon.icon-upload:hover { -webkit-box-shadow: inset 0 0 0 5px rgb(211, 12, 55) !important ; -moz-box-shadow: inset 0 0 0 5px rgb(211, 12, 55) !important ; -o-box-shadow: inset 0 0 0 5px rgb(211, 12, 55) !important ; -ms-box-shadow: inset 0 0 0 5px rgb(211, 12, 55) !important ; box-shadow: inset 0 0 0 5px rgb(211, 12, 55) !important  }
+.bg-settings > .uploadable a.icon.icon-upload:hover { -webkit-box-shadow: inset 0 0 0 5px rgb(245, 76, 25) !important ; -moz-box-shadow: inset 0 0 0 5px rgb(245, 76, 25) !important ; -o-box-shadow: inset 0 0 0 5px rgb(245, 76, 25) !important ; -ms-box-shadow: inset 0 0 0 5px rgb(245, 76, 25) !important ; box-shadow: inset 0 0 0 5px rgb(245, 76, 25) !important  }
 .user.notseeding .button-follow { border-color: #E0E0E0; }
 .user.card.notseeding .button-follow { border-color: #EFEFEF; }
 
@@ -3083,14 +3083,14 @@ h5 { font-weight: normal; color: rgba(0, 0, 0, 0.5) }
 
 .icon-add {
     font-size: 30px;
-    color: rgb(112, 48, 160);
+    color: rgb(245, 76, 25);
     padding: 0px 5px 0 5px;
     -webkit-border-radius: 5px; -moz-border-radius: 5px; -o-border-radius: 5px; -ms-border-radius: 5px; border-radius: 5px ;
     position: relative;
     top: 6px;
 }
-.icon-add:hover { background: rgba(112, 48, 160, 0.15) }
-.icon-add:active { background-color: rgb(112, 48, 160)!important; outline: none!important; color: #fff }
+.icon-add:hover { background: rgba(245, 76, 25, 0.15) }
+.icon-add:active { background-color: rgb(245, 76, 25)!important; outline: none!important; color: #fff }
 
 .icon-mute {
 	width: 17px; height: 14px; background-repeat: no-repeat; padding-right: 5px; vertical-align: -2px; opacity: 0.2;

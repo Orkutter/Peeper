@@ -25,10 +25,10 @@
 .post .actions .icon { margin-right: 1px; text-decoration: none }
 .post .actions .link { color: #AAA; font-size: 12px; height: 30px; vertical-align: middle; line-height: 30px; display: inline-block; padding-right: 10px }
 a.icon.link:hover {
-    color: rgb(112, 48, 160);
+    color: rgb(245, 76, 25);
 }
 a.icon.link:active {
-    background: rgb(112, 48, 160);
+    background: rgb(245, 76, 25);
     color: #fff;
     border-radius: 5px;
 }
@@ -84,8 +84,8 @@ textarea { background: rgba(255, 255, 255, 0.5); }
 	margin-right: 10px; padding-bottom: 5px; display: inline-block; border-bottom: 2px solid rgba(0,0,0,0);
 	color: #555; margin-bottom: 7px; margin-top: 10px; margin-left: 10px; transition: all 0.3s
 }
-.post-list-type .active { border-bottom: 2px solid rgb(112, 48, 160); color: rgb(112, 48, 160) }
-.post-list-type a:hover { border-bottom: 2px solid rgb(112, 48, 160); color: rgb(112, 48, 160); transition: none; text-decoration: none }
+.post-list-type .active { border-bottom: 2px solid rgb(242, 81, 38); color: rgb(242, 81, 38) }
+.post-list-type a:hover { border-bottom: 2px solid rgb(242, 81, 38); color: rgb(242, 81, 38); transition: none; text-decoration: none }
 
 .post .img { background-size: cover; text-align: center; position: relative; margin-bottom: 10px; }
 .post .img .show {

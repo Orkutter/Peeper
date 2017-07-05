@@ -76,5 +76,44 @@
     " hours ago": " horas atràs",
     " days ago": "dias atrás",
     "on ": "em ",
-    "Just now": "Agora mesmo"
+    "Just now": "Agora mesmo",
+	
+	"Random ZeroNet user": "Usuário aleatório da ZeroNet",
+	
+    "Home": "Início",
+    "Users": "Usuários",
+    "Settings": "Configurações",
+    " Everyone": " Todos",
+    " Liked": " Curtidos",
+    " Followed users": " Usuários seguidos",
+	
+    "Search in users...": "Pesquisar em usuários..",
+    "Search in settings...": "Pesquisar em configurações..",
+    "Autoload images": "Carregar imagens automáticamente",
+    "This will automatically load images in posts": "Isso irá automáticamente baixar imagens nos posts",
+    "WARNING: This might also autoload images you don't want to see or seed!": "ATENÇÃO: Isso poderá também autocarregar images que você não deseja ver ou semear!",
+    "I want my stars back": "Eu quero minhas estrelas de volta",
+    "Replace the heart with a star": "Substitui o coração por uma estrela",
+    "Enable transparency": "Habilitar transparência",
+	"Disable the background feature entierly": "Desabilitar os backgrounds em tudo",
+	"Don't load other users backgrounds": "Não carregar os backgrounds de outros usuários",
+	"Don't show background on the feed/timeline and other pages": "Não exibir o background no feed/linha do tempo e outros páginas",
+	"Header": "Cabeçalho",
+	"Disable Sticky Header": "Desabilitar cabeçalho flutuante",
+	"Move logo to the left": "Mover o logo para a esquerda",
+    "": "",
+	"This actually just hides a user's first post": "Isto atualmente simplesmente oculta a primeira postagem de um usuário",
+	"Show two columns instead of one": "Exibir duas colunas invés de uma",
+	
+	"What do you think?": "O que você acha?",
+	"Like": "Curtir",
+	"Add a photo": "Adicionar uma foto",
+	
+	"Edit Profile": "Editar Perfil",
+	"Following": "Seguindo",
+	"Unfollow": "Deixar de seguir",
+	"Theme Settings": "Configurações de Tema",
+	"Theme Color": "Cor do Tema",
+	"Download profile site": "Baixar site do perfil",
+    "": ""
 }

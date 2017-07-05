@@ -1,21 +1,53 @@
 {
- "address": "1MeFqFfFFGQfa1J3gJyYYUvb5Lksczq7nH",
+ "address": "1MEaLzSbzXmStAowrivK1Vu4iSEWLxgZLJ",
  "background-color": "#F2F4F6",
- "description": "Social site",
- "domain": "Me.ZeroNetwork.bit",
- "favicon": "zerome.ico",
+ "description": "Updated version of the old and basic ZeroMe.",
+ "domain": "peeper.bit",
+ "favicon": "icon.ico",
  "files": {
+  "LICENSE": {
+   "sha512": "7a0429020657fcf4b6035c393b10a98978360e99f3b0a092373057378a406bf0",
+   "size": 35815
+  },
+  "README.md": {
+   "sha512": "f5239d33b79bd5b336f2666373c74e843a9c6b26200b28e9c6d2057bf63d1c61",
+   "size": 38
+  },
   "css/all.css": {
-   "sha512": "6e9718ae9dd3c8dc643dfe1c5d3ce00d85a5225c6386beeef1191b2fa607ed58",
-   "size": 136676
+   "sha512": "281ef0da0b031db0b0125ee8c35395995512dab6c68e1719c625e1e70945b0d8",
+   "size": 187303
   },
   "dbschema.json": {
-   "sha512": "74530d277b800390b99c1125198a31ac52803e1510a7675e1f949e28ed94ea6a",
-   "size": 3436
+   "sha512": "0d0b7530908081c9e2226a65cef55cd3fc0aed6c7020c6ba2363391f4d7fc78c",
+   "size": 3607
   },
-  "favicon.ico": {
-   "sha512": "94fb8e604e75fdb1aabc04839ff18b384190f216361c60d57dc32b7a8f1f58b3",
-   "size": 1150
+  "fonts/FontAwesome.otf": {
+   "sha512": "a3acaaac3a9861ac7a4ba23e52b9115d39b674cb685b45454fb4b80329a4f737",
+   "size": 134808
+  },
+  "fonts/fontawesome-webfont.eot": {
+   "sha512": "c160d3d77e67eff986043461693b2a831e1175f579490d7f0b411005ea81bd4f",
+   "size": 165742
+  },
+  "fonts/fontawesome-webfont.ttf": {
+   "sha512": "9ffb91e68c975172848b4bba25284678cc2c6eb4fb2d42000aa871c36656c4ce",
+   "size": 165548
+  },
+  "fonts/fontawesome-webfont.woff": {
+   "sha512": "9c776dea55a01fd854ea23b3463d9ac716077d406ecbe8ed0c9b6120ff7e6035",
+   "size": 98024
+  },
+  "fonts/fontawesome-webfont.woff2": {
+   "sha512": "838fefdbc14901f41edf995a78fdac55764cd4912ccb734b8bea490919458290",
+   "size": 77160
+  },
+  "icon.ico": {
+   "sha512": "586bb9e0749a0d89a482274ea68a211bbdb00bdecfb1fc7cf2232797e4fe7df9",
+   "size": 370070
+  },
+  "img/default-bg.jpg": {
+   "sha512": "6db692e8f5cb8f8b839c76df2ed2baa114f63c64eecc72f7da566916c75214f1",
+   "size": 145205
   },
   "img/loading-circle.gif": {
    "sha512": "339baf1bccb9b80ae29c2493e73b40cf0588c96fc095954b475dea0538aaa929",
@@ -25,21 +57,37 @@
    "sha512": "8a42b98962faea74618113166886be488c09dad10ca47fe97005edc5fb40cc00",
    "size": 723
   },
+  "img/logo.png": {
+   "sha512": "7d444e3983cce3010dddaf2bd9f537e68f4f6b09b7c40a624e5c36cb592e4e11",
+   "size": 29582
+  },
+  "img/logo.svg": {
+   "sha512": "1d4c273fcefb63af4fbf7d9a26eab0504a24c592aa23a21a227ea21d2bc0bdb1",
+   "size": 4212
+  },
+  "img/post.svg": {
+   "sha512": "0bc4fac115168cc2c6266b241b7f8fbc6739159db4fd056b1cf9b6c1d06985da",
+   "size": 694
+  },
   "img/unkown.png": {
-   "sha512": "a972f05819097c3a38801b9004bf5011a2dcca257b915617d8ea44c202f2cdbd",
-   "size": 595
+   "sha512": "76a2a8625bc2d9f5ded29be919eaef14b8b67b472bbfbdad14c1c6e295a44b8e",
+   "size": 2665
+  },
+  "img/user-shape.png": {
+   "sha512": "5d80d4a564d674ea4b46adfecbb2ff6a6c5b1272c32b4caae7b29a7bedeee31e",
+   "size": 3441
   },
   "index.html": {
-   "sha512": "195e5ccda95a03754f731797d64f8b81eac1f52a004638a48b865b7c15fccebb",
-   "size": 645
+   "sha512": "08273d83410f4c47a995c4d8d0929c7aa5377265954a2c08206a86b73285d83b",
+   "size": 745
   },
   "js-external/pngencoder.js": {
-   "sha512": "ecaadaad552d2610336995b48360253cd6d847b6aa590fc3d96e7245a5d5fe11",
-   "size": 53602
+   "sha512": "2e0ebcf4d79213dbd382bd2d21a0c723d820febed7f1f572a0182a80cb49504e",
+   "size": 54636
   },
   "js/all.js": {
-   "sha512": "b4b426e737ea8f4857624fba0be8c41068e912473c29248d4a7e77d5b562b1ee",
-   "size": 261848
+   "sha512": "98d52d08375d18841144380b1c49b9d0bee3313af213a7045e6fbc199c224348",
+   "size": 340851
   },
   "languages/da.json": {
    "sha512": "5dc810fae4c6bfbcf2251ab28ff003a64155c4830cf79979f84868e41f48a64a",
@@ -50,29 +98,37 @@
    "size": 3447
   },
   "languages/hu.json": {
-   "sha512": "bc0f53e096ff1c701c63b0db227e5c51373c1903785ac448f1d9c44e81a1701f",
-   "size": 3294
+   "sha512": "67f61f0edb2aa8efac8bacbafaa076e8929977f6ecd470973938aa456431a3ba",
+   "size": 3374
   },
   "languages/it.json": {
-   "sha512": "11672811528ae60d63bb5d58d74c9650bd79e6ba7b1d849d409ffd3f30705891",
-   "size": 3346
+   "sha512": "ba67a787f4b3aef92008043499c26e6267ba975902700e16cff9491c6fe4bdf0",
+   "size": 3382
+  },
+  "languages/nl.json": {
+   "sha512": "b4f0863769a636b4fdb58091e7ffe5e84e315995b59e7c0b70e2b87b6927a8f9",
+   "size": 3540
+  },
+  "languages/pt-br.json": {
+   "sha512": "d3e13086235acbb3881113de429454939f54f69353c81cc619461b5363cc06f0",
+   "size": 5427
   },
   "languages/tr.json": {
    "sha512": "d9df6b218bcf359766ee3416a0cf4b4a3e9181601a7106957f674b22a79aa07a",
    "size": 3428
   },
   "languages/zh-tw.json": {
-   "sha512": "8145c4dccbe81b92c0acdddd8ee43c643a4487f33f572a6941c9d84adf60cd36",
-   "size": 3198
+   "sha512": "4af69455ed8b721321efa1ff27beeaeae34898917f5e83af499e778f192129e1",
+   "size": 4961
   },
   "languages/zh.json": {
-   "sha512": "8346aa8020c62126aa664662fd0576116e1c4798b6ca06fa8c4165c3e553e0ba",
-   "size": 3198
+   "sha512": "07b74469b81fe8abeaa0c0f8faee3d0f386dea6388a04c33c1766e18956cd8ca",
+   "size": 4964
   }
  },
- "ignore": "(merged-.*|(js|css)/(?!all.(js|css)))",
+ "ignore": "(merged-.*|(js|css)/(?!all.(js|css))|^.git)",
  "inner_path": "content.json",
- "modified": 1485876616,
+ "modified": 1499227675,
  "postmessage_nonce_security": true,
  "settings": {
   "default_hubs": {
@@ -82,18 +138,12 @@
    }
   }
  },
- "sign": [
-  89288942969200725549081085090043072627113788458365468843098033231628235533076,
-  103468393898560616471844708124872663684693291522163514887170928019330303296157
- ],
- "signers_sign": "G/UCyELE5shc5f/FSJSe2KvxGlZiS5fzvn7Ezhha0gN/QOFeznJtZWS61J20FfkGfHdp1HcpWv//anioez1iOW0=",
+ "signers_sign": "G5rXHVIJVZHJEqB1pOT94ilW6gKq4ygHaNTshz2Z7jmRDDgOaKSc+kaGR9udjWwWBA/yohuArbS1oJm+pCvOzYk=",
  "signs": {
-  "1MeFqFfFFGQfa1J3gJyYYUvb5Lksczq7nH": "HBdUDA1d2nC7v8FuIbOPKJtsIk3Z11DGrj/VYKetYyODtc6CGnWDvx6jOoevq7061TeCxPLz08Tr5spTSnkYF3w="
+  "1MEaLzSbzXmStAowrivK1Vu4iSEWLxgZLJ": "HGRDvoxnd2j9kVydAM4tfx9aDY99mMLPDnyEnDcet8vtN3SSpU3Cv7lDWV2slysh35Qk9dK2sdIMv8IzDjuE0/I="
  },
  "signs_required": 1,
- "title": "ZeroMe",
- "translate": [
-  "js/all.js"
- ],
- "zeronet_version": "0.5.1"
+ "title": "Peeper",
+ "translate": ["js/all.js"],
+ "zeronet_version": "0.5.6"
 }

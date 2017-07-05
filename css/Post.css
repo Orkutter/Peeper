@@ -8,7 +8,8 @@
 	background-color: rgba(255,255,255,0.9); padding: 16px 20px; padding-left: 80px; border-radius: 4px; backface-visibility: hidden; transform-style: preserve-3d; transform: translateZ(0);
 	border: 1px solid #EEF0F1; border-bottom: 2px solid #ECEDEE; margin-bottom: 12px; transition: all 0.3s;
 }
-.no-transparent .post { background-color: white; }
+.no-transparent .post { background-color: white; box-shadow: 0 0 15px 1px black; }
+.no-transparent .post:hover { box-shadow: 0px 0px 25px 5px #000; }
 .post.selected { box-shadow: 0px 0px 40px rgba(0,0,0,0.1); }
 
 .post .user .settings { float: right; color: #AAA; transition: all 0.3s; padding: 0px 10px; margin-right: -10px }
@@ -24,10 +25,10 @@
 .post .actions .icon { margin-right: 1px; text-decoration: none }
 .post .actions .link { color: #AAA; font-size: 12px; height: 30px; vertical-align: middle; line-height: 30px; display: inline-block; padding-right: 10px }
 a.icon.link:hover {
-    color: rgb(211, 12, 55);
+    color: rgb(112, 48, 160);
 }
 a.icon.link:active {
-    background: rgb(211, 12, 55);
+    background: rgb(112, 48, 160);
     color: #fff;
     border-radius: 5px;
 }
@@ -83,8 +84,8 @@ textarea { background: rgba(255, 255, 255, 0.5); }
 	margin-right: 10px; padding-bottom: 5px; display: inline-block; border-bottom: 2px solid rgba(0,0,0,0);
 	color: #555; margin-bottom: 7px; margin-top: 10px; margin-left: 10px; transition: all 0.3s
 }
-.post-list-type .active { border-bottom: 2px solid rgb(211, 12, 55); color: rgb(211, 12, 55) }
-.post-list-type a:hover { border-bottom: 2px solid rgb(211, 12, 55); color: rgb(211, 12, 55); transition: none; text-decoration: none }
+.post-list-type .active { border-bottom: 2px solid rgb(112, 48, 160); color: rgb(112, 48, 160) }
+.post-list-type a:hover { border-bottom: 2px solid rgb(112, 48, 160); color: rgb(112, 48, 160); transition: none; text-decoration: none }
 
 .post .img { background-size: cover; text-align: center; position: relative; margin-bottom: 10px; }
 .post .img .show {

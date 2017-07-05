@@ -113,7 +113,7 @@ class Head extends Class
 					h("li",h("a",{href:"?#{el[1]}", onclick: Page.handleLinkClick},[h("i.fa.fa-margin.fa-#{el[2]}"),el[0]]))
 			]),
 			if not Page.getSetting("logo_left")
-				h("div.logo", h("img", {src: "img/logo.svg", height: 40, title: "ZeroMe", onerror: "this.src='img/logo.png'; this.onerror=null;"}))
+				h("div.logo", h("img", {src: "img/logo.svg", height: 40, title: "Peeper", onerror: "this.src='img/logo.png'; this.onerror=null;"}))
 			if Page.user?.hub
 				# Registered user
 				h("div.right.authenticated", [

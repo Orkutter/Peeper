@@ -57,7 +57,6 @@
 }).call(this);
 
 
-
 /* ---- /1MEaLzSbzXmStAowrivK1Vu4iSEWLxgZLJ/js/lib/Dollar.coffee ---- */
 
 
@@ -69,7 +68,6 @@
   };
 
 }).call(this);
-
 
 
 /* ---- /1MEaLzSbzXmStAowrivK1Vu4iSEWLxgZLJ/js/lib/Promise.coffee ---- */
@@ -201,7 +199,6 @@
 }).call(this);
 
 
-
 /* ---- /1MEaLzSbzXmStAowrivK1Vu4iSEWLxgZLJ/js/lib/Property.coffee ---- */
 
 
@@ -211,7 +208,6 @@
   };
 
 }).call(this);
-
 
 
 /* ---- /1MEaLzSbzXmStAowrivK1Vu4iSEWLxgZLJ/js/lib/Prototypes.coffee ---- */
@@ -239,7 +235,6 @@
   };
 
 }).call(this);
-
 
 
 /* ---- /1MEaLzSbzXmStAowrivK1Vu4iSEWLxgZLJ/js/lib/RateLimitCb.coffee ---- */
@@ -319,7 +314,6 @@
   setTimeout (-> RateLimit 500, window.load, [3000]), 3000  # Called after 3000ms */
 
 }).call(this);
-
 
 
 /* ---- /1MEaLzSbzXmStAowrivK1Vu4iSEWLxgZLJ/js/lib/anime.min.js ---- */
@@ -1833,7 +1827,6 @@ window.entities=new Html5Entities()
 }).call(this);
 
 
-
 /* ---- /1MEaLzSbzXmStAowrivK1Vu4iSEWLxgZLJ/js/utils/Autosize.coffee ---- */
 
 
@@ -1974,7 +1967,6 @@ window.entities=new Html5Entities()
 }).call(this);
 
 
-
 /* ---- /1MEaLzSbzXmStAowrivK1Vu4iSEWLxgZLJ/js/utils/Debug.coffee ---- */
 
 
@@ -2006,7 +1998,6 @@ window.entities=new Html5Entities()
   window.Debug = new Debug();
 
 }).call(this);
-
 
 
 /* ---- /1MEaLzSbzXmStAowrivK1Vu4iSEWLxgZLJ/js/utils/Editable.coffee ---- */
@@ -2120,7 +2111,6 @@ window.entities=new Html5Entities()
 }).call(this);
 
 
-
 /* ---- /1MEaLzSbzXmStAowrivK1Vu4iSEWLxgZLJ/js/utils/ImagePreview.coffee ---- */
 
 
@@ -2223,7 +2213,6 @@ window.entities=new Html5Entities()
 }).call(this);
 
 
-
 /* ---- /1MEaLzSbzXmStAowrivK1Vu4iSEWLxgZLJ/js/utils/ItemList.coffee ---- */
 
 
@@ -2277,7 +2266,6 @@ window.entities=new Html5Entities()
 }).call(this);
 
 
-
 /* ---- /1MEaLzSbzXmStAowrivK1Vu4iSEWLxgZLJ/js/utils/MarkdownStrip.coffee ---- */
 
 
@@ -2287,7 +2275,6 @@ window.entities=new Html5Entities()
   };
 
 }).call(this);
-
 
 
 /* ---- /1MEaLzSbzXmStAowrivK1Vu4iSEWLxgZLJ/js/utils/Maxheight.coffee ---- */
@@ -2324,7 +2311,6 @@ window.entities=new Html5Entities()
   window.Maxheight = new Maxheight();
 
 }).call(this);
-
 
 
 /* ---- /1MEaLzSbzXmStAowrivK1Vu4iSEWLxgZLJ/js/utils/Menu.coffee ---- */
@@ -2464,7 +2450,6 @@ window.entities=new Html5Entities()
 }).call(this);
 
 
-
 /* ---- /1MEaLzSbzXmStAowrivK1Vu4iSEWLxgZLJ/js/utils/Overlay.coffee ---- */
 
 
@@ -2583,7 +2568,6 @@ window.entities=new Html5Entities()
 }).call(this);
 
 
-
 /* ---- /1MEaLzSbzXmStAowrivK1Vu4iSEWLxgZLJ/js/utils/Scrollwatcher.coffee ---- */
 
 
@@ -2641,7 +2625,6 @@ window.entities=new Html5Entities()
   window.Scrollwatcher = Scrollwatcher;
 
 }).call(this);
-
 
 
 /* ---- /1MEaLzSbzXmStAowrivK1Vu4iSEWLxgZLJ/js/utils/Text.coffee ---- */
@@ -2923,7 +2906,6 @@ window.entities=new Html5Entities()
 }).call(this);
 
 
-
 /* ---- /1MEaLzSbzXmStAowrivK1Vu4iSEWLxgZLJ/js/utils/Time.coffee ---- */
 
 
@@ -2992,7 +2974,6 @@ window.entities=new Html5Entities()
 }).call(this);
 
 
-
 /* ---- /1MEaLzSbzXmStAowrivK1Vu4iSEWLxgZLJ/js/utils/Translate.coffee ---- */
 
 
@@ -3002,7 +2983,6 @@ window.entities=new Html5Entities()
   };
 
 }).call(this);
-
 
 
 /* ---- /1MEaLzSbzXmStAowrivK1Vu4iSEWLxgZLJ/js/utils/Uploadable.coffee ---- */
@@ -3212,7 +3192,6 @@ window.entities=new Html5Entities()
 }).call(this);
 
 
-
 /* ---- /1MEaLzSbzXmStAowrivK1Vu4iSEWLxgZLJ/js/utils/ZeroFrame.coffee ---- */
 
 
@@ -3365,7 +3344,6 @@ window.entities=new Html5Entities()
   window.ZeroFrame = ZeroFrame;
 
 }).call(this);
-
 
 
 /* ---- /1MEaLzSbzXmStAowrivK1Vu4iSEWLxgZLJ/js/ActivityList.coffee ---- */
@@ -3650,7 +3628,6 @@ window.entities=new Html5Entities()
 }).call(this);
 
 
-
 /* ---- /1MEaLzSbzXmStAowrivK1Vu4iSEWLxgZLJ/js/AnonUser.coffee ---- */
 
 
@@ -3743,7 +3720,6 @@ window.entities=new Html5Entities()
 }).call(this);
 
 
-
 /* ---- /1MEaLzSbzXmStAowrivK1Vu4iSEWLxgZLJ/js/ChangeBackground.coffee ---- */
 
 
@@ -3792,7 +3768,6 @@ window.entities=new Html5Entities()
   };
 
 }).call(this);
-
 
 
 /* ---- /1MEaLzSbzXmStAowrivK1Vu4iSEWLxgZLJ/js/ContentCreateProfile.coffee ---- */
@@ -4028,7 +4003,6 @@ window.entities=new Html5Entities()
 }).call(this);
 
 
-
 /* ---- /1MEaLzSbzXmStAowrivK1Vu4iSEWLxgZLJ/js/ContentFeed.coffee ---- */
 
 
@@ -4135,13 +4109,13 @@ window.entities=new Html5Entities()
       return h("div#Content.center", [
         h("div.col-center", [
           this.post_create.render(), h("div.post-list-type", h("a.link", {
-            href: "#Everyone",
+            href: "#Followed+users",
             onclick: this.handleListTypeClick,
-            type: "everyone",
+            type: "followed",
             classes: {
-              active: this.type === "everyone"
+              active: this.type === "followed"
             }
-          }, h("i.fa.fa-globe"), " Everyone"), h("a.link", {
+          }, h("i.fa.fa-user-plus"), " Followed users"), h("a.link", {
             href: "#Liked",
             onclick: this.handleListTypeClick,
             type: "liked",
@@ -4149,13 +4123,13 @@ window.entities=new Html5Entities()
               active: this.type === "liked"
             }
           }, h("i.fa.fa-heart"), " Liked"), h("a.link", {
-            href: "#Followed+users",
+            href: "#Everyone",
             onclick: this.handleListTypeClick,
-            type: "followed",
+            type: "everyone",
             classes: {
-              active: this.type === "followed"
+              active: this.type === "everyone"
             }
-          }, h("i.fa.fa-user-plus"), " Followed users")), this.post_list.render()
+          }, h("i.fa.fa-globe"), " Everyone")), this.post_list.render()
         ]), h("div.col-right.noscrollfix", [
           h("div.light-bg", [
             this.activity_list.render(), this.new_user_list.users.length > 0 ? h("h2.sep.new", [
@@ -4608,7 +4582,6 @@ window.entities=new Html5Entities()
 }).call(this);
 
 
-
 /* ---- /1MEaLzSbzXmStAowrivK1Vu4iSEWLxgZLJ/js/ContentSettings.coffee ---- */
 
 
@@ -4757,7 +4730,6 @@ window.entities=new Html5Entities()
   window.ContentSettings = ContentSettings;
 
 }).call(this);
-
 
 
 /* ---- /1MEaLzSbzXmStAowrivK1Vu4iSEWLxgZLJ/js/ContentUsers.coffee ---- */
@@ -4913,7 +4885,6 @@ window.entities=new Html5Entities()
   window.ContentUsers = ContentUsers;
 
 }).call(this);
-
 
 
 /* ---- /1MEaLzSbzXmStAowrivK1Vu4iSEWLxgZLJ/js/Head.coffee ---- */
@@ -5086,7 +5057,6 @@ window.entities=new Html5Entities()
   window.Head = Head;
 
 }).call(this);
-
 
 
 /* ---- /1MEaLzSbzXmStAowrivK1Vu4iSEWLxgZLJ/js/Post.coffee ---- */
@@ -5546,7 +5516,6 @@ window.entities=new Html5Entities()
 }).call(this);
 
 
-
 /* ---- /1MEaLzSbzXmStAowrivK1Vu4iSEWLxgZLJ/js/PostCreate.coffee ---- */
 
 
@@ -5701,7 +5670,6 @@ window.entities=new Html5Entities()
   window.PostCreate = PostCreate;
 
 }).call(this);
-
 
 
 /* ---- /1MEaLzSbzXmStAowrivK1Vu4iSEWLxgZLJ/js/PostList.coffee ---- */
@@ -5966,7 +5934,6 @@ window.entities=new Html5Entities()
 }).call(this);
 
 
-
 /* ---- /1MEaLzSbzXmStAowrivK1Vu4iSEWLxgZLJ/js/PostMeta.coffee ---- */
 
 
@@ -6139,7 +6106,6 @@ window.entities=new Html5Entities()
   window.PostMeta = PostMeta;
 
 }).call(this);
-
 
 
 /* ---- /1MEaLzSbzXmStAowrivK1Vu4iSEWLxgZLJ/js/User.coffee ---- */
@@ -6797,7 +6763,6 @@ window.entities=new Html5Entities()
 }).call(this);
 
 
-
 /* ---- /1MEaLzSbzXmStAowrivK1Vu4iSEWLxgZLJ/js/UserList.coffee ---- */
 
 
@@ -6943,7 +6908,6 @@ window.entities=new Html5Entities()
   window.UserList = UserList;
 
 }).call(this);
-
 
 
 /* ---- /1MEaLzSbzXmStAowrivK1Vu4iSEWLxgZLJ/js/ZeroMe.coffee ---- */

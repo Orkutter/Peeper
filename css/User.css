@@ -4,7 +4,7 @@
 .users .user .added { font-size: 11px; color: #999; margin-left: 6px; vertical-align: 3px; }
 .users .user .intro-full { overflow-y: scroll; margin-left: -57px; padding-top: 18px; font-weight: 100; line-height: 1.5em; overflow: hidden; max-height: 400px; word-wrap: break-word; }
 .bg-settings { width: 150px; margin: 0 auto; }
-.bg-settings .uploadable .icon { margin: 0 auto; text-align: center; margin-left: 0px !important; }
+.bg-settings .uploadable .icon { margin: 0 auto; text-align: center; margin-left: 0px !important; height: 100px!important; }
 .no-left-padding { padding-left: 0px !important; text-align:center; }
 .users .user .bg-settings .uploadable .icon { margin-left: 67px; height: 67px; width: 75px; }
 .users .button-follow { float: right; margin-left: 5px; }
@@ -39,7 +39,7 @@
 .user .uploadable .icon-upload { position: absolute; margin-left: -60px; z-index: 1; margin-top: -4px; opacity: 1; background-color: rgba(0, 0, 0, 0.5); background-position: 11px 11px; width: 50px; height: 50px; border-radius: 50%; }
 .user .uploadable .icon-upload:hover { box-shadow: inset 0 0 0 5px rgb(245, 76, 25) !important }
 .bg-preview { border-radius: 5px }
-.bg-settings > .uploadable a.icon.icon-upload { border-radius: 0; margin-top: 0px; width: 160px; height: 86px; background-position: 65px 30px; border-radius: 5px }
+.bg-settings > .uploadable a.icon.icon-upload { border-radius: 0; margin-top: 0px; width: 160px; height: 86px; background-position: 65px 40px; border-radius: 5px }
 .bg-settings > .uploadable a.icon.icon-upload:hover { box-shadow: inset 0 0 0 5px rgb(245, 76, 25) !important }
 .user.notseeding .button-follow { border-color: #E0E0E0; }
 .user.card.notseeding .button-follow { border-color: #EFEFEF; }

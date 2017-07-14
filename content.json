@@ -3,7 +3,7 @@
  "background-color": "#F2F4F6",
  "description": "Updated version of the old and basic ZeroMe.",
  "domain": "peeper.bit",
- "favicon": "icon.ico",
+ "favicon": "img/logo.ico",
  "files": {
   "LICENSE": {
    "sha512": "7a0429020657fcf4b6035c393b10a98978360e99f3b0a092373057378a406bf0",
@@ -14,12 +14,16 @@
    "size": 38
   },
   "css/all.css": {
-   "sha512": "281ef0da0b031db0b0125ee8c35395995512dab6c68e1719c625e1e70945b0d8",
-   "size": 187303
+   "sha512": "6fce967c39f9de60975349a31776938d6dce8868ffd8c8cd336a5962ec9e2d7a",
+   "size": 187323
   },
   "dbschema.json": {
    "sha512": "0d0b7530908081c9e2226a65cef55cd3fc0aed6c7020c6ba2363391f4d7fc78c",
    "size": 3607
+  },
+  "desktop.ini": {
+   "sha512": "a1ffc45fbf5e48210de35d7555bc6a3b6826f79e70a75473ea144b191477cf4d",
+   "size": 172
   },
   "fonts/FontAwesome.otf": {
    "sha512": "a3acaaac3a9861ac7a4ba23e52b9115d39b674cb685b45454fb4b80329a4f737",
@@ -41,10 +45,6 @@
    "sha512": "838fefdbc14901f41edf995a78fdac55764cd4912ccb734b8bea490919458290",
    "size": 77160
   },
-  "icon.ico": {
-   "sha512": "586bb9e0749a0d89a482274ea68a211bbdb00bdecfb1fc7cf2232797e4fe7df9",
-   "size": 370070
-  },
   "img/default-bg.jpg": {
    "sha512": "6db692e8f5cb8f8b839c76df2ed2baa114f63c64eecc72f7da566916c75214f1",
    "size": 145205
@@ -57,13 +57,17 @@
    "sha512": "8a42b98962faea74618113166886be488c09dad10ca47fe97005edc5fb40cc00",
    "size": 723
   },
+  "img/logo.ico": {
+   "sha512": "8b33ede553258cd08ff1c8625ffaead2c4ad6350b1fb505ab49db971ae7ba937",
+   "size": 370070
+  },
   "img/logo.png": {
-   "sha512": "7d444e3983cce3010dddaf2bd9f537e68f4f6b09b7c40a624e5c36cb592e4e11",
-   "size": 29582
+   "sha512": "8506703dd1c9028700f7b459822159ea852f2968da0d309503678ac0c1930dd1",
+   "size": 25948
   },
   "img/logo.svg": {
-   "sha512": "1d4c273fcefb63af4fbf7d9a26eab0504a24c592aa23a21a227ea21d2bc0bdb1",
-   "size": 4212
+   "sha512": "dc367c0d3622f741d9d400c8effbf5140256e4efaa4faf894d8757d5ce3cedaf",
+   "size": 4601
   },
   "img/post.svg": {
    "sha512": "0bc4fac115168cc2c6266b241b7f8fbc6739159db4fd056b1cf9b6c1d06985da",
@@ -128,7 +132,7 @@
  },
  "ignore": "(merged-.*|(js|css)/(?!all.(js|css))|^.git)",
  "inner_path": "content.json",
- "modified": 1499278746,
+ "modified": 1500058741,
  "postmessage_nonce_security": true,
  "settings": {
   "default_hubs": {
@@ -140,7 +144,7 @@
  },
  "signers_sign": "G5rXHVIJVZHJEqB1pOT94ilW6gKq4ygHaNTshz2Z7jmRDDgOaKSc+kaGR9udjWwWBA/yohuArbS1oJm+pCvOzYk=",
  "signs": {
-  "1MEaLzSbzXmStAowrivK1Vu4iSEWLxgZLJ": "G4JQ5XERhLi4eb0dVwJZ2djJV7+W9Z9YXJhqp01TRljQBoUQvq6G2zu11PVM55CzYjFPwds8lp6Pe8cJX+Gp0S8="
+  "1MEaLzSbzXmStAowrivK1Vu4iSEWLxgZLJ": "G7jDpq6xS+MNnSIt69EgRvQoNkP8gXWbix5bS3RieJFIYJRKnevDpUV2Li/usJ1yNZrgPVupPzKWI3dkHZoQSLo="
  },
  "signs_required": 1,
  "title": "Peeper",

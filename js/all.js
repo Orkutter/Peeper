@@ -4157,7 +4157,6 @@ window.entities=new Html5Entities()
 }).call(this);
 
 
-
 /* ---- /1MEaLzSbzXmStAowrivK1Vu4iSEWLxgZLJ/js/ContentProfile.coffee ---- */
 
 
@@ -5502,7 +5501,10 @@ window.entities=new Html5Entities()
             classes: {
               active: (ref3 = Page.user) != null ? ref3.likes[post_uri] : void 0
             }
-          }), this.row.likes ? this.row.likes : void 0)
+          }), this.row.likes ? this.row.likes : void 0), h("a.icon.link", {
+            href: "#Soon",
+            title: "Peers seeding this peep"
+          }, h("i.fa.fa-share-alt"), " HUB")
         ]), this.renderComments()
       ]);
     };
@@ -5514,6 +5516,7 @@ window.entities=new Html5Entities()
   window.Post = Post;
 
 }).call(this);
+
 
 
 /* ---- /1MEaLzSbzXmStAowrivK1Vu4iSEWLxgZLJ/js/PostCreate.coffee ---- */

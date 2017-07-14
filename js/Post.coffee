@@ -236,11 +236,12 @@ class Post extends Class
 				@meta.render()
 			h("div.actions", [
 				h("a.icon.link", {href: "#Comment", title: "What do you think?", onclick: @handleCommentClick}, h("i.fa.fa-comment.icon-comment"), "Comment"),
+			    # h("a.icon.icon-share.link", {href: "#Share"}, "Share"),
 				h("a.icon.link", {classes: {active: Page.user?.likes[post_uri], loading: @submitting_like, "like-zero": @row.likes == 0}, href: "#Like", title: "Like", onclick: @handleLikeClick},
 					h("div"+(if Page.getSetting "gimme_stars" then ".fa.fa-star.icon-star" else ".fa.fa-heart.icon-heart"), {classes: {active: Page.user?.likes[post_uri]}}),
 					if @row.likes then @row.likes
 				)
-				# h("a.icon.icon-share.link", {href: "#Share"}, "Share"),
+				h("a.icon.link", {href: "#Soon", title: "Peers seeding this peep"}, h("i.fa.fa-share-alt"), " HUB"),
 			]),
 			@renderComments()
 		])

@@ -132,7 +132,7 @@
  },
  "ignore": "(merged-.*|(js|css)/(?!all.(js|css))|^.git)",
  "inner_path": "content.json",
- "modified": 1500059892,
+ "modified": 1500060188,
  "postmessage_nonce_security": true,
  "settings": {
   "default_hubs": {
@@ -144,7 +144,7 @@
  },
  "signers_sign": "G5rXHVIJVZHJEqB1pOT94ilW6gKq4ygHaNTshz2Z7jmRDDgOaKSc+kaGR9udjWwWBA/yohuArbS1oJm+pCvOzYk=",
  "signs": {
-  "1MEaLzSbzXmStAowrivK1Vu4iSEWLxgZLJ": "HOBirDmcxmFI6WUDDT4SHYpn8xWukps7P1HHDhO1Sv5ZYJjD9K4qBYreVG7RLT5I7buKlwNcUsI2fP7C/Nshz1M="
+  "1MEaLzSbzXmStAowrivK1Vu4iSEWLxgZLJ": "HEXKFMwGHL9u/B5JI6G1WcmLi7FhPxNuXwZ9lpuQJV7ha4hX7z0GonYcxnXigGTdPNZIPb+uj/W01w5qTE2PzFs="
  },
  "signs_required": 1,
  "title": "Peeper",

@@ -241,7 +241,7 @@ class Post extends Class
 					h("div"+(if Page.getSetting "gimme_stars" then ".fa.fa-star.icon-star" else ".fa.fa-heart.icon-heart"), {classes: {active: Page.user?.likes[post_uri]}}),
 					if @row.likes then @row.likes
 				)
-				h("a.icon.link", {href: "#Soon", title: "Peers seeding this peep"}, h("i.fa.fa-share-alt"), " HUB"),
+				h("a.icon.link", {href: "#Soon", title: "Peers seeding this post"}, h("i.fa.fa-share-alt"), " HUB"),
 			]),
 			@renderComments()
 		])

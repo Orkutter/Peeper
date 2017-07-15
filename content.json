@@ -14,8 +14,8 @@
    "size": 38
   },
   "css/all.css": {
-   "sha512": "6fce967c39f9de60975349a31776938d6dce8868ffd8c8cd336a5962ec9e2d7a",
-   "size": 187323
+   "sha512": "d2d422f75ebe04bb2f23e58f88cf82617a1c2c81a5874f088e1ffe6c8f1824f5",
+   "size": 186867
   },
   "dbschema.json": {
    "sha512": "0d0b7530908081c9e2226a65cef55cd3fc0aed6c7020c6ba2363391f4d7fc78c",
@@ -49,6 +49,10 @@
    "sha512": "6db692e8f5cb8f8b839c76df2ed2baa114f63c64eecc72f7da566916c75214f1",
    "size": 145205
   },
+  "img/donate.jpg": {
+   "sha512": "4a60d7031a8f4497f0143cd2c49e330654924bcbe3eb48fe1b1950279f2fcc44",
+   "size": 499
+  },
   "img/loading-circle.gif": {
    "sha512": "339baf1bccb9b80ae29c2493e73b40cf0588c96fc095954b475dea0538aaa929",
    "size": 2346
@@ -69,10 +73,6 @@
    "sha512": "dc367c0d3622f741d9d400c8effbf5140256e4efaa4faf894d8757d5ce3cedaf",
    "size": 4601
   },
-  "img/post.svg": {
-   "sha512": "0bc4fac115168cc2c6266b241b7f8fbc6739159db4fd056b1cf9b6c1d06985da",
-   "size": 694
-  },
   "img/unkown.png": {
    "sha512": "76a2a8625bc2d9f5ded29be919eaef14b8b67b472bbfbdad14c1c6e295a44b8e",
    "size": 2665
@@ -90,8 +90,8 @@
    "size": 54636
   },
   "js/all.js": {
-   "sha512": "4d03092dca77c8704aecb330beaff173398e8c26a2db82bf1d58ee10a534e851",
-   "size": 340951
+   "sha512": "d0c7555b43c0a8951bab2ceeeedd194c33d804e65639e7693daec237ca01c028",
+   "size": 346222
   },
   "languages/da.json": {
    "sha512": "5dc810fae4c6bfbcf2251ab28ff003a64155c4830cf79979f84868e41f48a64a",
@@ -114,8 +114,8 @@
    "size": 3540
   },
   "languages/pt-br.json": {
-   "sha512": "2470fe0076e33a38c8939338d3224d916cacaeed85de3f9a5e0e146c1e971166",
-   "size": 5488
+   "sha512": "964ebd21ea9362e470a3ed226c377950e680230d83fc1a7e20d6886d7729f4f4",
+   "size": 5523
   },
   "languages/tr.json": {
    "sha512": "d9df6b218bcf359766ee3416a0cf4b4a3e9181601a7106957f674b22a79aa07a",
@@ -132,7 +132,7 @@
  },
  "ignore": "(merged-.*|(js|css)/(?!all.(js|css))|^.git)",
  "inner_path": "content.json",
- "modified": 1500060188,
+ "modified": 1500100633,
  "postmessage_nonce_security": true,
  "settings": {
   "default_hubs": {
@@ -144,7 +144,7 @@
  },
  "signers_sign": "G5rXHVIJVZHJEqB1pOT94ilW6gKq4ygHaNTshz2Z7jmRDDgOaKSc+kaGR9udjWwWBA/yohuArbS1oJm+pCvOzYk=",
  "signs": {
-  "1MEaLzSbzXmStAowrivK1Vu4iSEWLxgZLJ": "HEXKFMwGHL9u/B5JI6G1WcmLi7FhPxNuXwZ9lpuQJV7ha4hX7z0GonYcxnXigGTdPNZIPb+uj/W01w5qTE2PzFs="
+  "1MEaLzSbzXmStAowrivK1Vu4iSEWLxgZLJ": "G0RYXucW4nqUrterV5BCdnEK8i7iM9Bxh2g6Q9bLuWO3EFRLDzBab0tRACJobAYvvuDbYqkoWzJfzHwPZNy6JCk="
  },
  "signs_required": 1,
  "title": "Peeper",

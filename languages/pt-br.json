@@ -64,7 +64,7 @@
 
     "Select user to post new content": "Selecione o usuário para postar novo conteúdo",
     "Write something...": "Escreva algo..",
-    "Submit new post": "Postar",
+    " Post": " Postar",
     "Invalid image, only jpg format supported": "Imagem inválida. Somente o formato JPG é suportado",
 
     "Follow in newsfeed": "Seguir no feed de notícias",
@@ -84,6 +84,7 @@
     "Home": "Início",
     "Users": "Usuários",
     "Settings": "Configurações",
+    "Donate": "Doar",
     " Everyone": " Todos",
     " Liked": " Curtidos",
     " Followed users": " Usuários seguidos",
@@ -92,7 +93,8 @@
     "Search in settings...": "Pesquisar em configurações..",
     "Autoload images": "Carregar imagens automáticamente",
     "This will automatically load images in posts": "Isso irá automáticamente baixar imagens nos posts",
-    "WARNING: This might also autoload images you don't want to see or seed!": "ATENÇÃO: Isso poderá também autocarregar images que você não deseja ver ou semear!",
+    "!WARN This might also autoload imagens you don't want to see or seed!": "!WARN Isso poderá também autocarregar images que você não deseja ver ou semear!",
+	"WARNING:": "ATENÇÃO:",
     "I want my stars back": "Eu quero minhas estrelas de volta",
     "Replace the heart with a star": "Substitui o coração por uma estrela",
     "Enable transparency": "Habilitar transparência",

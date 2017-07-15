@@ -4003,6 +4003,136 @@ window.entities=new Html5Entities()
 }).call(this);
 
 
+/* ---- /1MEaLzSbzXmStAowrivK1Vu4iSEWLxgZLJ/js/ContentDonate.coffee ---- */
+
+
+(function() {
+  var ContentDonate,
+    bind = function(fn, me){ return function(){ return fn.apply(me, arguments); }; },
+    extend = function(child, parent) { for (var key in parent) { if (hasProp.call(parent, key)) child[key] = parent[key]; } function ctor() { this.constructor = child; } ctor.prototype = parent.prototype; child.prototype = new ctor(); child.__super__ = parent.prototype; return child; },
+    hasProp = {}.hasOwnProperty;
+
+  ContentDonate = (function(superClass) {
+    extend(ContentDonate, superClass);
+
+    function ContentDonate() {
+      this.update = bind(this.update, this);
+      this.render = bind(this.render, this);
+      this.renderCheck = bind(this.renderCheck, this);
+      this.section = bind(this.section, this);
+      this.loaded = true;
+      this.need_update = false;
+    }
+
+    ContentDonate.prototype.fncs = {};
+
+    ContentDonate.prototype.section = function(name, ar) {
+      var e;
+      if (ar.filter(((function(_this) {
+        return function(e) {
+          return !e.properties.classes.invisible;
+        };
+      })(this))).length) {
+        return h("div.setting" + name, [
+          h("h2.sep", name), (function() {
+            var i, len, results;
+            results = [];
+            for (i = 0, len = ar.length; i < len; i++) {
+              e = ar[i];
+              results.push(e);
+            }
+            return results;
+          })(), h("br", name)
+        ]);
+      }
+    };
+
+    ContentDonate.prototype.renderCheck = function(key, name, desc, attrs) {
+      var base, ref;
+      if (desc == null) {
+        desc = "";
+      }
+      if (attrs == null) {
+        attrs = {};
+      }
+            if ((ref = (base = this.fncs)[key]) != null) {
+        ref;
+      } else {
+        base[key] = (function(_this) {
+          return function(item) {
+            if (attrs.disabled_by && Page.local_storage.settings[attrs.disabled_by]) {
+              return false;
+            }
+            Page.local_storage.settings[key] = !Page.local_storage.settings[key];
+            if (attrs.postRun) {
+              attrs.postRun(Page.local_storage.settings[key]);
+            }
+            document.body.className = "loaded" + Page.otherClasses();
+            Page.projector.scheduleRender();
+            Page.saveLocalStorage();
+            Page.content.need_update = true;
+            return false;
+          };
+        })(this);
+      };
+      return h("div.checkbox.setting", {
+        classes: {
+          invisible: (!this.search || (name.toLowerCase().indexOf(this.search.toLowerCase()) !== -1) ? false : true),
+          checked: Page.local_storage.settings[key],
+          disabled: attrs.disabled_by && Page.local_storage.settings[attrs.disabled_by]
+        },
+        onclick: this.fncs[key]
+      }, h("div.checkbox-skin"), h("div.title", name), h("br", key));
+    };
+
+    ContentDonate.prototype.render = function() {
+      window.otherPageBackground();
+      if (this.loaded && !Page.on_loaded.resolved) {
+        Page.on_loaded.resolve();
+      }
+      if (this.need_update) {
+        this.log("Updating");
+        this.need_update = false;
+        Page.changeTitle("Donate");
+      }
+      return h("div#Content.center", [
+        Page.local_storage_loaded ? h("div.post.settings", {
+          style: "border-radius: 16px"
+        }, [
+          h("br", "top"), h("div", {
+            style: "display:flex;"
+          }, [
+            h("h1", {
+              style: "margin:6px;"
+            }, "Donate")
+          ]), h("h2", "Help Peeper grow like Twitter and other surfacenet social networks"), h("h4", "Donate any amount in Bitcoin to the following address:"), h("img", {
+            src: "img/donate.jpg"
+          }), h("br"), h("a", {
+            href: "bitcoin:1MEaLzSbzXmStAowrivK1Vu4iSEWLxgZLJ"
+          }, "1MEaLzSbzXmStAowrivK1Vu4iSEWLxgZLJ"), h("small", " (This is the same address of Peeper in ZeroNet)"), h("br"), h("span", " Any amount you donate, me and possibly the community are very thankfull."), h("i.fa.fa-heart.icon-heart"), h("h4", "For where your BTC is going?"), h("span", "All donations/transactions are registered"), h("a", {
+            href: "https://blockchain.info/address/1MEaLzSbzXmStAowrivK1Vu4iSEWLxgZLJ"
+          }, " here"), h("span", " and every transaction with amount that I'll withdraw, will be linked in the issue that is offering the bounty. You can see the issues, the bounty offered and the developer(s). You can see more at our "), h("a", {
+            href: "https://github.com/World-wd/Peeper/issues/"
+          }, "GitHub issues"), h("span", "."), h("h4", "Questions?"), h("span", "Mention us in Peeper, by using @Peeper: in a post/comment."), h("br", "bottom")
+        ]) : (h("h1", "Loading Settings..."), this.need_update = true)
+      ]);
+    };
+
+    ContentDonate.prototype.update = function() {
+      this.need_update = true;
+      return Page.projector.scheduleRender();
+    };
+
+    return ContentDonate;
+
+  })(Class);
+
+  window.ContentDonate = ContentDonate;
+
+}).call(this);
+
+
+
 /* ---- /1MEaLzSbzXmStAowrivK1Vu4iSEWLxgZLJ/js/ContentFeed.coffee ---- */
 
 
@@ -4706,7 +4836,7 @@ window.entities=new Html5Entities()
               placeholder: "Search in settings...",
               oninput: this.handleSearchInput
             })
-          ]), this.section("", [this.renderCheck("autoload_media", "Autoload images", ["This will automatically load images in posts", "!WARN This might also autoload images you don't want to see or seed!"]), this.renderCheck("gimme_stars", "I want my stars back", "Replace the heart with a star"), this.renderCheck("transparent", "Enable transparency")]), this.section("Background", [
+          ]), this.section("", [this.renderCheck("autoload_media", "Autoload images", ["This will automatically load images in posts", "!WARN This might also autoload imagens you don't want to see or seed!"]), this.renderCheck("gimme_stars", "I want my stars back", "Replace the heart with a star"), this.renderCheck("transparent", "Enable transparency")]), this.section("Background", [
             this.renderCheck("disable_background", "Disable the background feature entierly"), this.renderCheck("load_others_background_disabled", "Don't load other users backgrounds", "", {
               disabled_by: "disable_background"
             }), this.renderCheck("hide_background_timeline", "Don't show background on the feed/timeline and other pages", "", {
@@ -4993,7 +5123,7 @@ window.entities=new Html5Entities()
         })) : void 0, h("ul", [
           (function() {
             var i, len, ref, results;
-            ref = [["Home", 'Home', "home"], ["Users", 'Users', "users"], ["Settings", 'Settings', "gear"]];
+            ref = [["Home", 'Home', "home"], ["Users", 'Users', "users"], ["Settings", 'Settings', "gear"], ["Donate", 'Donate', "heart"]];
             results = [];
             for (i = 0, len = ref.length; i < len; i++) {
               el = ref[i];
@@ -5056,7 +5186,6 @@ window.entities=new Html5Entities()
   window.Head = Head;
 
 }).call(this);
-
 
 
 /* ---- /1MEaLzSbzXmStAowrivK1Vu4iSEWLxgZLJ/js/Post.coffee ---- */
@@ -6992,6 +7121,7 @@ window.entities=new Html5Entities()
       this.content_feed = new ContentFeed();
       this.content_users = new ContentUsers();
       this.content_settings = new ContentSettings();
+      this.content_donate = new ContentDonate();
       this.content_profile = new ContentProfile();
       this.content_create_profile = new ContentCreateProfile();
       this.scrollwatcher = new Scrollwatcher();
@@ -7045,6 +7175,8 @@ window.entities=new Html5Entities()
 
       } else if (this.params.urls[0] === 'Settings') {
         content = this.content_settings;
+      } else if (this.params.urls[0] === 'Donate') {
+        content = this.content_donate;
       } else if (this.params.urls[0] === "ProfileName") {
         this.content_profile.findUser(this.params.urls[1], (function(_this) {
           return function(user) {

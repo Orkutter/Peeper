@@ -14,7 +14,7 @@
    "size": 38
   },
   "css/all.css": {
-   "sha512": "d2d422f75ebe04bb2f23e58f88cf82617a1c2c81a5874f088e1ffe6c8f1824f5",
+   "sha512": "5fd34e6521bf44460cdf1d4d182907d73a082a6ab00b1c00e6e3ed3587f74e7f",
    "size": 186867
   },
   "dbschema.json": {
@@ -132,7 +132,7 @@
  },
  "ignore": "(merged-.*|(js|css)/(?!all.(js|css))|^.git)",
  "inner_path": "content.json",
- "modified": 1500102369,
+ "modified": 1500102837,
  "postmessage_nonce_security": true,
  "settings": {
   "default_hubs": {
@@ -144,7 +144,7 @@
  },
  "signers_sign": "G5rXHVIJVZHJEqB1pOT94ilW6gKq4ygHaNTshz2Z7jmRDDgOaKSc+kaGR9udjWwWBA/yohuArbS1oJm+pCvOzYk=",
  "signs": {
-  "1MEaLzSbzXmStAowrivK1Vu4iSEWLxgZLJ": "HDcjIcmzrmeexW94ZNR7+xRWI6ettcWTfuEKMFyW1MCQfdSN2+rSY8CGZzA735txs08Run/QKRLQgV3idBXxY2Q="
+  "1MEaLzSbzXmStAowrivK1Vu4iSEWLxgZLJ": "G4MgrfKfTFcaabSnEyJWkMbn65D5iH3y2iYKxTzvEQG+bauf8/YGAvVswFgxYCQcnRvuZwfTBRt6d3HWDPfnz58="
  },
  "signs_required": 1,
  "title": "Peeper",

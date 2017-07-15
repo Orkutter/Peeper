@@ -72,7 +72,7 @@ class PostCreate extends Class
 					h("div.image", {style: "height: 0px", classes: {empty: true}})
 				h("div.postbuttons",
 				    h("a.icon-add.link", {href: "#", title: "Add a photo", onclick: @handleUploadClick}, h("i.fa.fa-picture-o")),
-					h("a.button.button-submit", {href: "#Submit", onclick: @handlePostSubmit}, "Submit new post"),
+					h("a.button.button-submit", {href: "#Submit", onclick: @handlePostSubmit}, h("i.fa.fa-pencil-square-o"), " Post"),
 				),
 				h("div", {style: "clear: both"})
 			)

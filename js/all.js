@@ -5058,6 +5058,7 @@ window.entities=new Html5Entities()
 }).call(this);
 
 
+
 /* ---- /1MEaLzSbzXmStAowrivK1Vu4iSEWLxgZLJ/js/Post.coffee ---- */
 
 
@@ -5503,7 +5504,7 @@ window.entities=new Html5Entities()
             }
           }), this.row.likes ? this.row.likes : void 0), h("a.icon.link", {
             href: "#Soon",
-            title: "Peers seeding this peep"
+            title: "Peers seeding this post"
           }, h("i.fa.fa-share-alt"), " HUB")
         ]), this.renderComments()
       ]);
@@ -5516,7 +5517,6 @@ window.entities=new Html5Entities()
   window.Post = Post;
 
 }).call(this);
-
 
 
 /* ---- /1MEaLzSbzXmStAowrivK1Vu4iSEWLxgZLJ/js/PostCreate.coffee ---- */
@@ -5640,7 +5640,7 @@ window.entities=new Html5Entities()
         }, h("i.fa.fa-picture-o")), h("a.button.button-submit", {
           href: "#Submit",
           onclick: this.handlePostSubmit
-        }, "Submit new post")), h("div", {
+        }, h("i.fa.fa-pencil-square-o"), " Post")), h("div", {
           style: "clear: both"
         }));
       } else if (Page.site_info.cert_user_id) {

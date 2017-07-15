@@ -118,5 +118,21 @@
 	"Theme Settings": "Configurações de Tema",
 	"Theme Color": "Cor do Tema",
 	"Download profile site": "Baixar site do perfil",
+    "": "",
+	
+    "Help Peeper grow like Twitter and other surfacenet social networks": "Ajude o Peeper a crescer como o Twitter e outras redes sociais da surfacenet",
+    "Donate any amount in Bitcoin to the following address:": "Doe qualquer quantidade em Bitcoin para o seguinte endereço:",
+    " (This is the same address of Peeper in ZeroNet)": " (Este é o mesmo endereço do Peeper no ZeroNet)",
+    " Any amount you donate, I and possibly the community will be very grateful.": " Qualquer quantia que você doe, eu e possivelmente a comunidade estaremos muito gratos.",
+    "For where your BTC is going?": "Para onde seus BTC estão indo?",
+    "All donations/transactions are registered ": "Todas as doações/transações são registradas ",
+    "here": "aqui",
+    "GitHub issues": "issues no GitHub",
+    " and every transaction with amount that I'll withdraw, will be linked in the issue that is offering the bounty. You can see the issues, the bounty offered and the developer(s). You can see more at our ": " e todas as transações com montante que eu retirarei, serão vinculadas na issue que está oferecendo o bounty. Você pode ver as issues, a bounty oferecida e o(s) desenvolvedor(es). Você pode ver mais em nossas ",
+    "Questions?": "Dúvidas?",
+	"Mention us in Peeper, by using ": "Mencione-nos no Peeper, usando ",
+	" in a post/comment.": " em uma postagem/comentário.",
+    "News?": "Notícias?",
+    "Follow Peeper": "Siga o Peeper",
     "": ""
 }

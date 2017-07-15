@@ -14,7 +14,7 @@
    "size": 38
   },
   "css/all.css": {
-   "sha512": "5fd34e6521bf44460cdf1d4d182907d73a082a6ab00b1c00e6e3ed3587f74e7f",
+   "sha512": "ebc12178926677cd82bd3cffe4413294667ce659f8e14e442cd482d0fc152d7b",
    "size": 186867
   },
   "dbschema.json": {
@@ -90,8 +90,8 @@
    "size": 54636
   },
   "js/all.js": {
-   "sha512": "1210e48ced80c2576ef36569aef6a7efce7c585eba91838749225e37476bc5c3",
-   "size": 346478
+   "sha512": "b65ab37274b1a9c9ea88b936c70e43ace68c3ee8fe300d0712fa961e578db414",
+   "size": 346472
   },
   "languages/da.json": {
    "sha512": "5dc810fae4c6bfbcf2251ab28ff003a64155c4830cf79979f84868e41f48a64a",
@@ -132,7 +132,7 @@
  },
  "ignore": "(merged-.*|(js|css)/(?!all.(js|css))|^.git)",
  "inner_path": "content.json",
- "modified": 1500102837,
+ "modified": 1500104194,
  "postmessage_nonce_security": true,
  "settings": {
   "default_hubs": {
@@ -144,7 +144,7 @@
  },
  "signers_sign": "G5rXHVIJVZHJEqB1pOT94ilW6gKq4ygHaNTshz2Z7jmRDDgOaKSc+kaGR9udjWwWBA/yohuArbS1oJm+pCvOzYk=",
  "signs": {
-  "1MEaLzSbzXmStAowrivK1Vu4iSEWLxgZLJ": "G4MgrfKfTFcaabSnEyJWkMbn65D5iH3y2iYKxTzvEQG+bauf8/YGAvVswFgxYCQcnRvuZwfTBRt6d3HWDPfnz58="
+  "1MEaLzSbzXmStAowrivK1Vu4iSEWLxgZLJ": "HJq9Y2Mnj90tmFmWJeumB7sdQK2CEsnkS1ZRf8aoH2nRSCtcvc31YTwYNsePVZ+GqOPPcV5GvFKVnf3gbZt570E="
  },
  "signs_required": 1,
  "title": "Peeper",

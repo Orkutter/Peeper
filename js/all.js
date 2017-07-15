@@ -3770,6 +3770,138 @@ window.entities=new Html5Entities()
 }).call(this);
 
 
+/* ---- /1MEaLzSbzXmStAowrivK1Vu4iSEWLxgZLJ/js/ContentBadges.coffee ---- */
+
+
+(function() {
+  var ContentBadges,
+    bind = function(fn, me){ return function(){ return fn.apply(me, arguments); }; },
+    extend = function(child, parent) { for (var key in parent) { if (hasProp.call(parent, key)) child[key] = parent[key]; } function ctor() { this.constructor = child; } ctor.prototype = parent.prototype; child.prototype = new ctor(); child.__super__ = parent.prototype; return child; },
+    hasProp = {}.hasOwnProperty;
+
+  ContentBadges = (function(superClass) {
+    extend(ContentBadges, superClass);
+
+    function ContentBadges() {
+      this.update = bind(this.update, this);
+      this.render = bind(this.render, this);
+      this.renderCheck = bind(this.renderCheck, this);
+      this.section = bind(this.section, this);
+      this.loaded = true;
+      this.need_update = false;
+    }
+
+    ContentBadges.prototype.fncs = {};
+
+    ContentBadges.prototype.section = function(name, ar) {
+      var e;
+      if (ar.filter(((function(_this) {
+        return function(e) {
+          return !e.properties.classes.invisible;
+        };
+      })(this))).length) {
+        return h("div.setting" + name, [
+          h("h2.sep", name), (function() {
+            var i, len, results;
+            results = [];
+            for (i = 0, len = ar.length; i < len; i++) {
+              e = ar[i];
+              results.push(e);
+            }
+            return results;
+          })(), h("br", name)
+        ]);
+      }
+    };
+
+    ContentBadges.prototype.renderCheck = function(key, name, desc, attrs) {
+      var base, ref;
+      if (desc == null) {
+        desc = "";
+      }
+      if (attrs == null) {
+        attrs = {};
+      }
+            if ((ref = (base = this.fncs)[key]) != null) {
+        ref;
+      } else {
+        base[key] = (function(_this) {
+          return function(item) {
+            if (attrs.disabled_by && Page.local_storage.settings[attrs.disabled_by]) {
+              return false;
+            }
+            Page.local_storage.settings[key] = !Page.local_storage.settings[key];
+            if (attrs.postRun) {
+              attrs.postRun(Page.local_storage.settings[key]);
+            }
+            document.body.className = "loaded" + Page.otherClasses();
+            Page.projector.scheduleRender();
+            Page.saveLocalStorage();
+            Page.content.need_update = true;
+            return false;
+          };
+        })(this);
+      };
+      return h("div.checkbox.setting", {
+        classes: {
+          invisible: (!this.search || (name.toLowerCase().indexOf(this.search.toLowerCase()) !== -1) ? false : true),
+          checked: Page.local_storage.settings[key],
+          disabled: attrs.disabled_by && Page.local_storage.settings[attrs.disabled_by]
+        },
+        onclick: this.fncs[key]
+      }, h("div.checkbox-skin"), h("div.title", name), h("br", key));
+    };
+
+    ContentBadges.prototype.render = function() {
+      window.otherPageBackground();
+      if (this.loaded && !Page.on_loaded.resolved) {
+        Page.on_loaded.resolve();
+      }
+      if (this.need_update) {
+        this.log("Updating");
+        this.need_update = false;
+        Page.changeTitle("Badges");
+      }
+      return h("div#Content.center", [
+        Page.local_storage_loaded ? h("div.post.settings", {
+          style: "border-radius: 16px"
+        }, [
+          h("br", "top"), h("div", {
+            style: "display:flex;"
+          }, [
+            h("h1", {
+              style: "margin:6px;"
+            }, "Badges")
+          ]), h("h2", "Show to other users in your profile what you're doing for make Peeper better!"), h("h4", "Donate any amount in Bitcoin to the following address:"), h("img", {
+            src: "img/donate.jpg"
+          }), h("br"), h("a", {
+            href: "bitcoin:1MEaLzSbzXmStAowrivK1Vu4iSEWLxgZLJ"
+          }, "1MEaLzSbzXmStAowrivK1Vu4iSEWLxgZLJ"), h("small", " (This is the same address of Peeper in ZeroNet)"), h("br"), h("span", " Any amount you donate, I and possibly the community will be very grateful."), h("i.fa.fa-heart.icon-heart"), h("h4", "For where your BTC is going?"), h("span", "All donations/transactions are registered "), h("a", {
+            href: "https://blockchain.info/address/1MEaLzSbzXmStAowrivK1Vu4iSEWLxgZLJ"
+          }, "here"), h("span", " and every transaction with amount that I'll withdraw, will be linked in the issue that is offering the bounty. You can see the issues, the bounty offered and the developer(s). You can see more at our "), h("a", {
+            href: "https://github.com/World-wd/Peeper/issues/"
+          }, "GitHub issues"), h("span", "."), h("h4", "Questions?"), h("span", "Mention us in Peeper, by using "), h("code", "@Peeper:"), h("span", " in a post/comment."), h("h4", "News?"), h("a", {
+            href: "http://127.0.0.1:43110/peeper.bit/?Profile/1oranGeS2xsKZ4jVsu9SVttzgkYXu4k9v/1EbCmWB1LcB6NdJhRBhu6krKCs3gZhePzp/peeper@zeroid.bit"
+          }, "Follow Peeper"), h("span", "."), h("br", "bottom")
+        ]) : (h("h1", "Loading Settings..."), this.need_update = true)
+      ]);
+    };
+
+    ContentBadges.prototype.update = function() {
+      this.need_update = true;
+      return Page.projector.scheduleRender();
+    };
+
+    return ContentBadges;
+
+  })(Class);
+
+  window.ContentBadges = ContentBadges;
+
+}).call(this);
+
+
+
 /* ---- /1MEaLzSbzXmStAowrivK1Vu4iSEWLxgZLJ/js/ContentCreateProfile.coffee ---- */
 
 
@@ -4132,7 +4264,6 @@ window.entities=new Html5Entities()
   window.ContentDonate = ContentDonate;
 
 }).call(this);
-
 
 
 /* ---- /1MEaLzSbzXmStAowrivK1Vu4iSEWLxgZLJ/js/ContentFeed.coffee ---- */
@@ -5125,7 +5256,7 @@ window.entities=new Html5Entities()
         })) : void 0, h("ul", [
           (function() {
             var i, len, ref, results;
-            ref = [["Home", 'Home', "home"], ["Users", 'Users', "users"], ["Settings", 'Settings', "gear"], ["Donate", 'Donate', "heart"]];
+            ref = [["Home", 'Home', "home"], ["Users", 'Users', "users"], ["Settings", 'Settings', "gear"], ["", 'Donate', "heart"], ["", 'Badges', "certificate"]];
             results = [];
             for (i = 0, len = ref.length; i < len; i++) {
               el = ref[i];
@@ -7124,6 +7255,7 @@ window.entities=new Html5Entities()
       this.content_users = new ContentUsers();
       this.content_settings = new ContentSettings();
       this.content_donate = new ContentDonate();
+      this.content_badges = new ContentBadges();
       this.content_profile = new ContentProfile();
       this.content_create_profile = new ContentCreateProfile();
       this.scrollwatcher = new Scrollwatcher();
@@ -7179,6 +7311,8 @@ window.entities=new Html5Entities()
         content = this.content_settings;
       } else if (this.params.urls[0] === 'Donate') {
         content = this.content_donate;
+      } else if (this.params.urls[0] === 'Badges') {
+        content = this.content_badges;
       } else if (this.params.urls[0] === "ProfileName") {
         this.content_profile.findUser(this.params.urls[1], (function(_this) {
           return function(user) {

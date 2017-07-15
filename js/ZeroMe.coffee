@@ -46,6 +46,7 @@ class ZeroMe extends ZeroFrame
 		@content_users = new ContentUsers()
 		@content_settings = new ContentSettings()
 		@content_donate = new ContentDonate()
+		@content_badges = new ContentBadges()
 		@content_profile = new ContentProfile()
 		@content_create_profile = new ContentCreateProfile()
 		@scrollwatcher = new Scrollwatcher()
@@ -97,6 +98,8 @@ class ZeroMe extends ZeroFrame
 			content = @content_settings
 		else if @params.urls[0] == 'Donate'
 			content = @content_donate
+		else if @params.urls[0] == 'Badges'
+			content = @content_badges
 		else if @params.urls[0] == "ProfileName"
 			@content_profile.findUser @params.urls[1], (user) =>
 				@setUrl user.getLink(), "replace"

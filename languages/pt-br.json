@@ -93,7 +93,7 @@
     "Search in settings...": "Pesquisar em configurações..",
     "Autoload images": "Carregar imagens automáticamente",
     "This will automatically load images in posts": "Isso irá automáticamente baixar imagens nos posts",
-    "!WARN This might also autoload imagens you don't want to see or seed!": "!WARN Isso poderá também autocarregar images que você não deseja ver ou semear!",
+    "!WARN This might also autoload images you don't want to see or seed!": "!WARN Isso poderá também autocarregar imagens que você não deseja ver ou semear!",
 	"WARNING:": "ATENÇÃO:",
     "I want my stars back": "Eu quero minhas estrelas de volta",
     "Replace the heart with a star": "Substitui o coração por uma estrela",
@@ -134,5 +134,14 @@
 	" in a post/comment.": " em uma postagem/comentário.",
     "News?": "Notícias?",
     "Follow Peeper": "Siga o Peeper",
-    "": ""
+    "": "",
+
+	"Badges": "Insígnias/Badges",
+    "Show to other users in your profile what you're doing for make Peeper better!": "Mostre a outros usuários em seu perfil o que você está fazendo para tornar o Peeper melhor!",
+    "What are Open Badges?": "O que são Open Badges?",
+    "'Get recognition for learning that happens anywhere. Then share it on the places that matter. A digital badge is an online representation of a skill you've earned'. Know more in ": "'Ganhe reconhecimento por aprendizado que acontece em qualquer lugar. Em seguida, compartilhe nos lugares que importam. Uma open badge é uma representação on-line de uma habilidade que você ganhou '. Conheça mais no ",
+    "the Open Badges site": "site das Open Badges",
+    "How to earn my badges in Peeper?": "Como ganhar minhas open badges no Peeper?",
+    "Complete a specific task/achievement. For reference, see the ": "Complete uma tarefa/realização específica. Para referência, veja a ",
+    ". Send to Peeper the proof of achievement and your email to receive the badge.": ". Envie para o Peeper a prova de conquista e seu email para receber a insígnia."
 }

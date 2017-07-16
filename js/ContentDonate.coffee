@@ -71,6 +71,8 @@ class ContentDonate extends Class
 					h("h4","News?")
 					h("a",{href:"http://127.0.0.1:43110/peeper.bit/?Profile/1oranGeS2xsKZ4jVsu9SVttzgkYXu4k9v/1EbCmWB1LcB6NdJhRBhu6krKCs3gZhePzp/peeper@zeroid.bit"},"Follow Peeper")
 					h("span",".")
+					h("br")
+					h("img",{src:"img/issuer-insignia-ribbon2.png",align:"middle"})
 					h("br","bottom") #make it "unique"
 				])
 			else

@@ -13,6 +13,10 @@
    "sha512": "f5239d33b79bd5b336f2666373c74e843a9c6b26200b28e9c6d2057bf63d1c61",
    "size": 38
   },
+  "badges/list.html": {
+   "sha512": "d4a14594d1f39b0f5ce891bb03aada0101995ebec58e5e9c6e308c223b85be8b",
+   "size": 4635
+  },
   "css/all.css": {
    "sha512": "ebc12178926677cd82bd3cffe4413294667ce659f8e14e442cd482d0fc152d7b",
    "size": 186867
@@ -53,6 +57,14 @@
    "sha512": "4a60d7031a8f4497f0143cd2c49e330654924bcbe3eb48fe1b1950279f2fcc44",
    "size": 499
   },
+  "img/issuer-insignia-banner1.png": {
+   "sha512": "4c191a00bdded524e970c6674c1e0fc09d7589def7e6eba44b8553edd737e572",
+   "size": 19580
+  },
+  "img/issuer-insignia-ribbon2.png": {
+   "sha512": "8ce95b5e5cad18193598daab0380c4824d8b4a38984a22ae088d7d2defb994c7",
+   "size": 7725
+  },
   "img/loading-circle.gif": {
    "sha512": "339baf1bccb9b80ae29c2493e73b40cf0588c96fc095954b475dea0538aaa929",
    "size": 2346
@@ -90,8 +102,8 @@
    "size": 54636
   },
   "js/all.js": {
-   "sha512": "b65ab37274b1a9c9ea88b936c70e43ace68c3ee8fe300d0712fa961e578db414",
-   "size": 346472
+   "sha512": "0600984d602365294ee7423d2658e24103d64edf8b8b26ee24cc2f698d62aa31",
+   "size": 351868
   },
   "languages/da.json": {
    "sha512": "5dc810fae4c6bfbcf2251ab28ff003a64155c4830cf79979f84868e41f48a64a",
@@ -114,8 +126,8 @@
    "size": 3540
   },
   "languages/pt-br.json": {
-   "sha512": "99b5b3cbab0b53d5ab568319e0dfc18d396c71fe3922fcb96cc0b9a2dbcc3578",
-   "size": 7005
+   "sha512": "7886a5c40e6c657502e8780967286cd0ad2d25f8eeaf63bd9dd4fd265e7d880d",
+   "size": 8149
   },
   "languages/tr.json": {
    "sha512": "d9df6b218bcf359766ee3416a0cf4b4a3e9181601a7106957f674b22a79aa07a",
@@ -132,7 +144,7 @@
  },
  "ignore": "(merged-.*|(js|css)/(?!all.(js|css))|^.git)",
  "inner_path": "content.json",
- "modified": 1500104194,
+ "modified": 1500197017,
  "postmessage_nonce_security": true,
  "settings": {
   "default_hubs": {
@@ -144,7 +156,7 @@
  },
  "signers_sign": "G5rXHVIJVZHJEqB1pOT94ilW6gKq4ygHaNTshz2Z7jmRDDgOaKSc+kaGR9udjWwWBA/yohuArbS1oJm+pCvOzYk=",
  "signs": {
-  "1MEaLzSbzXmStAowrivK1Vu4iSEWLxgZLJ": "HJq9Y2Mnj90tmFmWJeumB7sdQK2CEsnkS1ZRf8aoH2nRSCtcvc31YTwYNsePVZ+GqOPPcV5GvFKVnf3gbZt570E="
+  "1MEaLzSbzXmStAowrivK1Vu4iSEWLxgZLJ": "G9WxlOB8Nw5F+P/AT9BtwwFCZWx/7W7YTrwbRa3DaX3zd4DtZlvjJe3v3lW3hZ84r3QFLaEZPwhMe7hu8B4z1dg="
  },
  "signs_required": 1,
  "title": "Peeper",

@@ -9,7 +9,7 @@ class Head extends Class
 				Page.updateSiteInfo =>
 					Page.content.update()
 		else
-			Page.cmd "certSelect", {"accepted_domains": ["zeroid.bit"], "accept_any": true}
+			Page.cmd "certSelect", {"accepted_domains": ["zeroid.bit"; "kxoid.bit"], "accept_any": true}
 		return false
 
 	handleFollowMenuItemClick: (type, item) =>

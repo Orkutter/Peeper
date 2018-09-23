@@ -1,5 +1,5 @@
 {
- "address": "1MEaLzSbzXmStAowrivK1Vu4iSEWLxgZLJ",
+ "address": "1PEEPJuD41shof53g3WauQKi4k4wVe3Vzu",
  "background-color": "#F2F4F6",
  "description": "Updated version of the old and basic ZeroMe.",
  "domain": "peeper.bit",
@@ -10,24 +10,24 @@
    "size": 35815
   },
   "README.md": {
-   "sha512": "f5239d33b79bd5b336f2666373c74e843a9c6b26200b28e9c6d2057bf63d1c61",
-   "size": 38
+   "sha512": "b059fa3bc9d31bcdf39a6367c8408f15b4ba52406bccef39a2887b447d467051",
+   "size": 122
   },
   "badges/list.html": {
    "sha512": "d4a14594d1f39b0f5ce891bb03aada0101995ebec58e5e9c6e308c223b85be8b",
    "size": 4635
   },
   "css/all.css": {
-   "sha512": "ebc12178926677cd82bd3cffe4413294667ce659f8e14e442cd482d0fc152d7b",
-   "size": 186867
+   "sha512": "7ca812ec72eb38f10e74d0f7287669a655895ab3edd1748e7c07d5f7322a9933",
+   "size": 190016
   },
   "dbschema.json": {
    "sha512": "0d0b7530908081c9e2226a65cef55cd3fc0aed6c7020c6ba2363391f4d7fc78c",
    "size": 3607
   },
   "desktop.ini": {
-   "sha512": "a1ffc45fbf5e48210de35d7555bc6a3b6826f79e70a75473ea144b191477cf4d",
-   "size": 172
+   "sha512": "2fac4e8dd670590f71fbc97c43fdbff74c6a87112ba782f66f6cea68cfa61d35",
+   "size": 94
   },
   "fonts/FontAwesome.otf": {
    "sha512": "a3acaaac3a9861ac7a4ba23e52b9115d39b674cb685b45454fb4b80329a4f737",
@@ -102,8 +102,8 @@
    "size": 54636
   },
   "js/all.js": {
-   "sha512": "0600984d602365294ee7423d2658e24103d64edf8b8b26ee24cc2f698d62aa31",
-   "size": 351868
+   "sha512": "1cfecc4f564da6acd42fa6c903289914d12cfa78c71d2341a81dee66bae208b7",
+   "size": 359557
   },
   "languages/da.json": {
    "sha512": "5dc810fae4c6bfbcf2251ab28ff003a64155c4830cf79979f84868e41f48a64a",
@@ -134,32 +134,32 @@
    "size": 3428
   },
   "languages/zh-tw.json": {
-   "sha512": "4af69455ed8b721321efa1ff27beeaeae34898917f5e83af499e778f192129e1",
-   "size": 4961
+   "sha512": "d9361d457ea7019e4fe60b60577eca3ed118e6240c2a7ba3f2c75ca02cfe85b4",
+   "size": 4988
   },
   "languages/zh.json": {
-   "sha512": "07b74469b81fe8abeaa0c0f8faee3d0f386dea6388a04c33c1766e18956cd8ca",
-   "size": 4964
+   "sha512": "444bec83c7e1bba758b531c5371c9d5f4a2505952682bea933073ae1cc95e243",
+   "size": 4991
   }
  },
  "ignore": "(merged-.*|(js|css)/(?!all.(js|css))|^.git)",
  "inner_path": "content.json",
- "modified": 1500197017,
+ "modified": 1537532673,
  "postmessage_nonce_security": true,
  "settings": {
   "default_hubs": {
-   "1oranGeS2xsKZ4jVsu9SVttzgkYXu4k9v": {
-    "description": "Hub for ZeroMe users. Runner: Nofish",
-    "title": "Orange hub"
+   "1N9sU8qh3S4ei9PHE1qQyYPbcckJomvwMd": {
+    "description": "720Mb for you. Adapting itself for ZeroNet's actual needs. Runner: @Plasmmer.",
+    "title": "ChameleonHub"
    }
   }
  },
- "signers_sign": "G5rXHVIJVZHJEqB1pOT94ilW6gKq4ygHaNTshz2Z7jmRDDgOaKSc+kaGR9udjWwWBA/yohuArbS1oJm+pCvOzYk=",
+ "signers_sign": "HBUjj4/OxXLLpuPGm2AjbdSxH44jkisNNCtSAl7DVj9wXGPUEAVQ5qH5ZojbnRy8BykdVqWw7Bzv14AfnMl/yfI=",
  "signs": {
-  "1MEaLzSbzXmStAowrivK1Vu4iSEWLxgZLJ": "G9WxlOB8Nw5F+P/AT9BtwwFCZWx/7W7YTrwbRa3DaX3zd4DtZlvjJe3v3lW3hZ84r3QFLaEZPwhMe7hu8B4z1dg="
+  "1PEEPJuD41shof53g3WauQKi4k4wVe3Vzu": "HHJlE8nxUbDkhuHpbjmCJRloDQkxgj98XTs02alA7cofTxu4cf/aw9Q4kFeFrN3blgRLtxHN9B7Iqif2SZANac8="
  },
  "signs_required": 1,
  "title": "Peeper",
  "translate": ["js/all.js"],
- "zeronet_version": "0.5.6"
+ "zeronet_version": "0.6.3"
 }

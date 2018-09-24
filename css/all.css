@@ -1,6 +1,6 @@
 
 
-/* ---- /1MEaLzSbzXmStAowrivK1Vu4iSEWLxgZLJ/css/Activity.css ---- */
+/* ---- /1PEEPJuD41shof53g3WauQKi4k4wVe3Vzu/css/Activity.css ---- */
 
 
 .activity-list { margin-bottom: 30px }
@@ -30,7 +30,7 @@
 
 
 
-/* ---- /1MEaLzSbzXmStAowrivK1Vu4iSEWLxgZLJ/css/Button.css ---- */
+/* ---- /1PEEPJuD41shof53g3WauQKi4k4wVe3Vzu/css/Button.css ---- */
 
 
 .button {
@@ -144,7 +144,7 @@
 
 
 
-/* ---- /1MEaLzSbzXmStAowrivK1Vu4iSEWLxgZLJ/css/Checkbox.css ---- */
+/* ---- /1PEEPJuD41shof53g3WauQKi4k4wVe3Vzu/css/Checkbox.css ---- */
 
 
 .checkbox-skin { background-color: #CCC; width: 35px; height: 18px; -webkit-border-radius: 15px; -moz-border-radius: 15px; -o-border-radius: 15px; -ms-border-radius: 15px; border-radius: 15px ; -webkit-transition: all 0.3s ease-in-out; -moz-transition: all 0.3s ease-in-out; -o-transition: all 0.3s ease-in-out; -ms-transition: all 0.3s ease-in-out; transition: all 0.3s ease-in-out ; display: inline-block; }
@@ -159,7 +159,7 @@
 
 
 
-/* ---- /1MEaLzSbzXmStAowrivK1Vu4iSEWLxgZLJ/css/Comment.css ---- */
+/* ---- /1PEEPJuD41shof53g3WauQKi4k4wVe3Vzu/css/Comment.css ---- */
 
 
 .comment-list {
@@ -184,7 +184,7 @@
 
 
 
-/* ---- /1MEaLzSbzXmStAowrivK1Vu4iSEWLxgZLJ/css/Editable.css ---- */
+/* ---- /1PEEPJuD41shof53g3WauQKi4k4wVe3Vzu/css/Editable.css ---- */
 
 
 .editable .icon-edit { margin-left: -24px; padding: 7px; -webkit-border-radius: 30px; -moz-border-radius: 30px; -o-border-radius: 30px; -ms-border-radius: 30px; border-radius: 30px ; margin-top: -5px; position: absolute; opacity: 0; -webkit-transition: all 0.3s ; -moz-transition: all 0.3s ; -o-transition: all 0.3s ; -ms-transition: all 0.3s ; transition: all 0.3s  }
@@ -198,7 +198,7 @@
 }
 
 
-/* ---- /1MEaLzSbzXmStAowrivK1Vu4iSEWLxgZLJ/css/Head.css ---- */
+/* ---- /1PEEPJuD41shof53g3WauQKi4k4wVe3Vzu/css/Head.css ---- */
 
 
 .head-container { background-color: white; -webkit-box-shadow: 0 0 15px 1px black; -moz-box-shadow: 0 0 15px 1px black; -o-box-shadow: 0 0 15px 1px black; -ms-box-shadow: 0 0 15px 1px black; box-shadow: 0 0 15px 1px black ; max-height: 50px; }
@@ -238,7 +238,7 @@ body:not(.logo-left) .head .logo { width: 42%; }
 
 
 
-/* ---- /1MEaLzSbzXmStAowrivK1Vu4iSEWLxgZLJ/css/Hub.css ---- */
+/* ---- /1PEEPJuD41shof53g3WauQKi4k4wVe3Vzu/css/Hub.css ---- */
 
 
 .hub.card { padding: 21px; text-align: left; font-size: 18px; width: 80%; display: block; margin-left: auto; margin-right: auto; }
@@ -249,7 +249,7 @@ body:not(.logo-left) .head .logo { width: 42%; }
 .hubselect { padding-top: 30px }
 
 
-/* ---- /1MEaLzSbzXmStAowrivK1Vu4iSEWLxgZLJ/css/Maxheight.css ---- */
+/* ---- /1PEEPJuD41shof53g3WauQKi4k4wVe3Vzu/css/Maxheight.css ---- */
 
 
 .maxheight { max-height: 550px; overflow: hidden; -webkit-transition: all 1s ease-in-out ; -moz-transition: all 1s ease-in-out ; -o-transition: all 1s ease-in-out ; -ms-transition: all 1s ease-in-out ; transition: all 1s ease-in-out  }
@@ -260,7 +260,7 @@ body:not(.logo-left) .head .logo { width: 42%; }
 }
 
 
-/* ---- /1MEaLzSbzXmStAowrivK1Vu4iSEWLxgZLJ/css/Menu.css ---- */
+/* ---- /1PEEPJuD41shof53g3WauQKi4k4wVe3Vzu/css/Menu.css ---- */
 
 
 .menu {
@@ -282,7 +282,7 @@ body:not(.logo-left) .head .logo { width: 42%; }
 }
 
 
-/* ---- /1MEaLzSbzXmStAowrivK1Vu4iSEWLxgZLJ/css/Overlay.css ---- */
+/* ---- /1PEEPJuD41shof53g3WauQKi4k4wVe3Vzu/css/Overlay.css ---- */
 
 
 #Overlay {
@@ -293,7 +293,7 @@ body:not(.logo-left) .head .logo { width: 42%; }
 #Overlay .img { position: absolute; background-size: contain; -webkit-transition: all 0.3s; -moz-transition: all 0.3s; -o-transition: all 0.3s; -ms-transition: all 0.3s; transition: all 0.3s ; background-repeat: no-repeat; }
 
 
-/* ---- /1MEaLzSbzXmStAowrivK1Vu4iSEWLxgZLJ/css/Post.css ---- */
+/* ---- /1PEEPJuD41shof53g3WauQKi4k4wVe3Vzu/css/Post.css ---- */
 
 
 
@@ -414,7 +414,7 @@ textarea { background: rgba(255, 255, 255, 0.5); }
 
 
 
-/* ---- /1MEaLzSbzXmStAowrivK1Vu4iSEWLxgZLJ/css/Settings.css ---- */
+/* ---- /1PEEPJuD41shof53g3WauQKi4k4wVe3Vzu/css/Settings.css ---- */
 
 
 .checkbox.setting .desc { color: #888; margin-left: 30px; }
@@ -437,14 +437,14 @@ textarea { background: rgba(255, 255, 255, 0.5); }
 }
 
 
-/* ---- /1MEaLzSbzXmStAowrivK1Vu4iSEWLxgZLJ/css/Uploadable.css ---- */
+/* ---- /1PEEPJuD41shof53g3WauQKi4k4wVe3Vzu/css/Uploadable.css ---- */
 
 
 .uploadable .icon-upload { -webkit-transition: all 0.3s ; -moz-transition: all 0.3s ; -o-transition: all 0.3s ; -ms-transition: all 0.3s ; transition: all 0.3s  }
 
 
 
-/* ---- /1MEaLzSbzXmStAowrivK1Vu4iSEWLxgZLJ/css/User.css ---- */
+/* ---- /1PEEPJuD41shof53g3WauQKi4k4wVe3Vzu/css/User.css ---- */
 
 
 .users .user { padding-left: 70px; padding-bottom: 20px }
@@ -500,7 +500,7 @@ textarea { background: rgba(255, 255, 255, 0.5); }
 
 
 
-/* ---- /1MEaLzSbzXmStAowrivK1Vu4iSEWLxgZLJ/css/ZeroMe.css ---- */
+/* ---- /1PEEPJuD41shof53g3WauQKi4k4wVe3Vzu/css/ZeroMe.css ---- */
 
 
 body {
@@ -644,7 +644,7 @@ h5 { font-weight: normal; color: rgba(0, 0, 0, 0.5) }
 
 
 
-/* ---- /1MEaLzSbzXmStAowrivK1Vu4iSEWLxgZLJ/css/font-awesome.css ---- */
+/* ---- /1PEEPJuD41shof53g3WauQKi4k4wVe3Vzu/css/font-awesome.css ---- */
 
 
 /* custom stuff */
@@ -3013,7 +3013,7 @@ h5 { font-weight: normal; color: rgba(0, 0, 0, 0.5) }
 
 
 
-/* ---- /1MEaLzSbzXmStAowrivK1Vu4iSEWLxgZLJ/css/fonts.css ---- */
+/* ---- /1PEEPJuD41shof53g3WauQKi4k4wVe3Vzu/css/fonts.css ---- */
 
 
 /* Base64 encoder: http://www.motobit.com/util/base64-decoder-encoder.asp */
@@ -3050,7 +3050,7 @@ h5 { font-weight: normal; color: rgba(0, 0, 0, 0.5) }
 }
 
 
-/* ---- /1MEaLzSbzXmStAowrivK1Vu4iSEWLxgZLJ/css/icons.css ---- */
+/* ---- /1PEEPJuD41shof53g3WauQKi4k4wVe3Vzu/css/icons.css ---- */
 
 
 .icon {
@@ -3100,7 +3100,7 @@ h5 { font-weight: normal; color: rgba(0, 0, 0, 0.5) }
 }
 .icon-share:empty { padding-right: 0px }
 
-.icon-heart {
+.icon-thumbs-up {
 	    font-size: 17px; padding-left: 10px; padding-right: 6px;
 }
 .icon-star {

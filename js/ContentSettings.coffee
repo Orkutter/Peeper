@@ -66,7 +66,7 @@ class ContentSettings extends Class
 					])
 					@section("", [
 						@renderCheck("autoload_media","Autoload images",["This will automatically load images in posts","!WARN This might also autoload images you don't want to see or seed!"])
-						@renderCheck("gimme_stars","I want my stars back","Replace the heart with a star")
+						@renderCheck("gimme_stars","I want my stars back","Replace the thumbs up with a star")
 						@renderCheck("transparent","Enable transparency")
 					])
 					@section("Background", [

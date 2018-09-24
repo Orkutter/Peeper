@@ -4236,13 +4236,14 @@ window.entities=new Html5Entities()
               style: "margin:6px;"
             }, "Donate")
           ]), h("h2", "Help Peeper grow like Twitter and other surfacenet social networks"), h("h4", "Donate any amount in Bitcoin to the following address:"), h("img", {
-            src: "img/donate.jpg"
+            src: "img/bitcoin_1PEEPJuD41shof53g3WauQKi4k4wVe3Vzu.png",
+            width: "400px"
           }), h("br"), h("a", {
-            href: "bitcoin:1MEaLzSbzXmStAowrivK1Vu4iSEWLxgZLJ"
-          }, "1MEaLzSbzXmStAowrivK1Vu4iSEWLxgZLJ"), h("small", " (This is the same address of Peeper in ZeroNet)"), h("br"), h("span", " Any amount you donate, I and possibly the community will be very grateful."), h("i.fa.fa-heart.icon-heart"), h("h4", "For where your BTC is going?"), h("span", "All donations/transactions are registered "), h("a", {
-            href: "https://blockchain.info/address/1MEaLzSbzXmStAowrivK1Vu4iSEWLxgZLJ"
+            href: "bitcoin:1PEEPJuD41shof53g3WauQKi4k4wVe3Vzu"
+          }, "1PEEPJuD41shof53g3WauQKi4k4wVe3Vzu"), h("small", " (This is the same address of Peeper in ZeroNet)"), h("br"), h("span", " Any amount you donate, I and possibly the community will be very grateful."), h("i.fa.fa-heart.icon-heart"), h("h4", "For where your BTC is going?"), h("span", "All donations/transactions are registered "), h("a", {
+            href: "https://blockchain.info/address/1PEEPJuD41shof53g3WauQKi4k4wVe3Vzu"
           }, "here"), h("span", " and every transaction with amount that I'll withdraw, will be linked in the issue that is offering the bounty. You can see the issues, the bounty offered and the developer(s). You can see more at our "), h("a", {
-            href: "https://github.com/World-wd/Peeper/issues/"
+            href: "https://github.com/ZeroNetPlus/Peeper/issues"
           }, "GitHub issues"), h("span", "."), h("h4", "Questions?"), h("span", "Mention us in Peeper, by using "), h("code", "@Peeper:"), h("span", " in a post/comment."), h("h4", "News?"), h("a", {
             href: "http://127.0.0.1:43110/peeper.bit/?Profile/1oranGeS2xsKZ4jVsu9SVttzgkYXu4k9v/1EbCmWB1LcB6NdJhRBhu6krKCs3gZhePzp/peeper@zeroid.bit"
           }, "Follow Peeper"), h("span", "."), h("br"), h("img", {
@@ -4970,7 +4971,7 @@ window.entities=new Html5Entities()
               placeholder: "Search in settings...",
               oninput: this.handleSearchInput
             })
-          ]), this.section("", [this.renderCheck("autoload_media", "Autoload images", ["This will automatically load images in posts", "!WARN This might also autoload images you don't want to see or seed!"]), this.renderCheck("gimme_stars", "I want my stars back", "Replace the heart with a star"), this.renderCheck("transparent", "Enable transparency")]), this.section("Background", [
+          ]), this.section("", [this.renderCheck("autoload_media", "Autoload images", ["This will automatically load images in posts", "!WARN This might also autoload images you don't want to see or seed!"]), this.renderCheck("gimme_stars", "I want my stars back", "Replace the thumbs up with a star"), this.renderCheck("transparent", "Enable transparency")]), this.section("Background", [
             this.renderCheck("disable_background", "Disable the background feature entierly"), this.renderCheck("load_others_background_disabled", "Don't load other users backgrounds", "", {
               disabled_by: "disable_background"
             }), this.renderCheck("hide_background_timeline", "Don't show background on the feed/timeline and other pages", "", {
@@ -5252,7 +5253,7 @@ window.entities=new Html5Entities()
         Page.getSetting("logo_left") ? h("div.logo", h("img", {
           src: "img/logo.svg",
           height: 40,
-          title: "ZeroMe",
+          title: "Peeper",
           onerror: "this.src='img/logo.png'; this.onerror=null;"
         })) : void 0, h("ul", [
           (function() {
@@ -5762,7 +5763,7 @@ window.entities=new Html5Entities()
             href: "#Like",
             title: "Like",
             onclick: this.handleLikeClick
-          }, h("div" + (Page.getSetting("gimme_stars") ? ".fa.fa-star.icon-star" : ".fa.fa-heart.icon-heart"), {
+          }, h("div" + (Page.getSetting("gimme_stars") ? ".fa.fa-star.icon-star" : ".fa.fa-thumbs-up.icon-thumbs-up"), {
             classes: {
               active: (ref3 = Page.user) != null ? ref3.likes[post_uri] : void 0
             }

@@ -1,4 +1,4 @@
-{
+﻿{
     "Visitor": "Visitante",
     "Select your account": "Selecione sua conta",
     "You need a profile for this feature": "Para utilizar este recurso, você necessita um perfil",
@@ -53,7 +53,7 @@
     "Comment": "Comentar",
     "Add your comment": "Adicionar seu comentário",
     "Reply": "Responder",
-	"Peers seeding this post": "Pares semeando esta postagem",
+	"Peers seeding this post": "Peers semeando esta postagem",
 
     "Everyone": "Todos",
     "Followed users": "Usuários que sigo",

@@ -64,8 +64,8 @@ class ZeroMe extends ZeroFrame
 			window.requestAnimationFrame =>
 				document.body.className = "loaded"+@otherClasses()
 
-		@projector.replace($("#Head"), @head.render)
-		@projector.replace($("#Overlay"), @overlay.render)
+		@projector.replace($("#Head")[0], @head.render)
+		@projector.replace($("#Overlay")[0], @overlay.render)
 
 		# Update every minute to keep time since fields up-to date
 		setInterval ( ->
@@ -119,7 +119,7 @@ class ZeroMe extends ZeroFrame
 				@projector.detach(@content.render)
 			@content = content
 			@on_user_info.then =>
-				@projector.replace($("#Content"), @content.render)
+				@projector.replace($("#Content")[0], @content.render)
 
 
 	setUrl: (url, mode="push") ->

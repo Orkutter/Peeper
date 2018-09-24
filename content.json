@@ -18,8 +18,8 @@
    "size": 4635
   },
   "css/all.css": {
-   "sha512": "bc85e944201e9b44beb943be9654f4260f578a941992b2b6dd5734b373a057d9",
-   "size": 186871
+   "sha512": "538eb340758373b46f991b13f87d21ef2abb3c8339c4fdedeaa3e0a221248aa8",
+   "size": 187012
   },
   "dbschema.json": {
    "sha512": "0d0b7530908081c9e2226a65cef55cd3fc0aed6c7020c6ba2363391f4d7fc78c",
@@ -102,8 +102,8 @@
    "size": 54636
   },
   "js/all.js": {
-   "sha512": "113154fd774d4d25b79015a26df0ba34638973a6ea42bc9865439ac7bea2941d",
-   "size": 351959
+   "sha512": "bc9583d52e550ce949166c4ccd1479b00bf5512ba7bc5a9b5066dad1f0f5572b",
+   "size": 438738
   },
   "languages/da.json": {
    "sha512": "5dc810fae4c6bfbcf2251ab28ff003a64155c4830cf79979f84868e41f48a64a",
@@ -142,9 +142,9 @@
    "size": 4991
   }
  },
- "ignore": "(merged-.*|(js|css)/(?!all.(js|css))|^.git)",
+ "ignore": "(merged-.*|(js|css)/(?!all.(js|css)|?!jquery.min.js)|^.git)",
  "inner_path": "content.json",
- "modified": 1537798884,
+ "modified": 1537814364,
  "postmessage_nonce_security": true,
  "settings": {
   "default_hubs": {
@@ -156,7 +156,7 @@
  },
  "signers_sign": "HBUjj4/OxXLLpuPGm2AjbdSxH44jkisNNCtSAl7DVj9wXGPUEAVQ5qH5ZojbnRy8BykdVqWw7Bzv14AfnMl/yfI=",
  "signs": {
-  "1PEEPJuD41shof53g3WauQKi4k4wVe3Vzu": "HKPctDnfD7uGzYNuI4eYNGVoUATDSPVwMRZPhXW9CKihCtZwjkgJlMgK3b3FbeiK8sD+ztkAb40wbJAlxTep2N0="
+  "1PEEPJuD41shof53g3WauQKi4k4wVe3Vzu": "HJYYIHlF3cl+/Ot3kh6J8Hr06B3T2ApO6GRj8tv6EQAhRDQWqXHHaFQbBOqAlavOS0YaLIBqGN6CGWHfsfF3TJM="
  },
  "signs_required": 1,
  "title": "Peeper",

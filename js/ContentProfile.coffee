@@ -309,7 +309,7 @@ class ContentProfile extends Class
 				]),
 
 				if @editing and @loaded and (@user.row.bgColor || @user.row.bgUnset)
-					h("div.user.card.profile.no-left-padding", [
+					h("div.user.card.profile.bgsetting", [
 						h("div.bg-settings",[
 							h("h2", h("b.intro-full","Theme Settings"))
 							h("div","Background")

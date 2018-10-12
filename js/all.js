@@ -7,8 +7,6 @@
   var Class,
     slice = [].slice;
 
-  jQuery(document).ready(function() {});
-
   Class = (function() {
     function Class() {}
 

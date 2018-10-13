@@ -7,34 +7,12 @@ class ActivityList extends Class
 		@found = 0
 		@loading = true
 		@update_timer = null
-		@filter_hub = null
-		@filter_language_ids = null
-		@show_after_date = "0"
-		@show_since_day = "0"
 
 	queryActivities: (cb) ->
-		if @filter_language_ids
-			where = "WHERE (comment_id, json_id) IN #{@filter_language_ids} AND date_added < #{Time.timestamp()+120} "
-		else if @directories == "all"
-			if (Page.local_storage.settings.show_since || \
-					Page.local_storage.settings.show_after) && \
-					Page.local_storage.settings.show_since != "0"
-				where = "WHERE date_added < #{Time.timestamp()+120} "
-			else
-				where = "WHERE date_added > #{Time.timestamp()-60*60*24*2} AND date_added < #{Time.timestamp()+120} "
-
-		else if @directories == "hub"
-			where = "WHERE json.hub = '#{@filter_hub}' AND date_added < #{Time.timestamp()+120} "
+		if @directories == "all"
+			where = "WHERE date_added > #{Time.timestamp()-60*60*24*2} AND date_added < #{Time.timestamp()+120} "
 		else
 			where = "WHERE json.directory IN #{Text.sqlIn(@directories)} AND date_added < #{Time.timestamp()+120} "
-
-		if Page.local_storage.settings.show_since
-			if Page.local_storage.settings.show_since != "0"
-				this.show_since_day = Page.local_storage.settings.show_since
-				where += "AND date_added > strftime('%s', 'now') - 3600*24*" + String(this.show_since_day) + " "
-		else if Page.local_storage.settings.show_after
-			this.show_after_date = Page.local_storage.settings.show_after - 1
-			where += "AND date_added > " + String(this.show_after_date) + " "
 
 		query = """
 			SELECT
@@ -42,28 +20,24 @@ class ActivityList extends Class
 			 json.site || "/" || post_uri AS subject, body, date_added,
 			 NULL AS subject_auth_address, NULL AS subject_hub, NULL AS subject_user_name
 			FROM
-			 comment
-			LEFT JOIN json USING (json_id)
+			 json
+			LEFT JOIN comment USING (json_id)
+			 #{where}
+
+			UNION ALL
+
+			SELECT
+			 'post_like' AS type, json.*,
+			 json.site || "/" || post_uri AS subject, '' AS body, date_added,
+			 NULL AS subject_auth_address, NULL AS subject_hub, NULL AS subject_user_name
+			FROM
+			 json
+			LEFT JOIN post_like USING (json_id)
 			 #{where}
 		"""
-		if !@filter_language_ids
-			query += """
-
-				UNION ALL
-
-				SELECT
-				 'post_like' AS type, json.*,
-				 json.site || "/" || post_uri AS subject, '' AS body, date_added,
-				 NULL AS subject_auth_address, NULL AS subject_hub, NULL AS subject_user_name
-				FROM
-				 json
-				LEFT JOIN post_like USING (json_id)
-				 #{where}
-			"""
 
 		if @directories != "all"  # Dont show follows in all users activity feed
 			query += """
-
 				UNION ALL
 
 				SELECT
@@ -75,20 +49,12 @@ class ActivityList extends Class
 				LEFT JOIN follow USING (json_id)
 				 #{where}
 			"""
-		if (Page.local_storage.settings.show_since || \
-				Page.local_storage.settings.show_after) && \
-				Page.local_storage.settings.show_since != "0"
-			query += """
 
-				ORDER BY date_added ASC
-				LIMIT #{@limit+1}
-			"""
-		else
-			query += """
+		query += """
 
-				ORDER BY date_added DESC
-				LIMIT #{@limit+1}
-			"""
+			ORDER BY date_added DESC
+			LIMIT #{@limit+1}
+		"""
 		@logStart("Update")
 
 		Page.cmd "dbQuery", [query, {directories: @directories}], (rows) =>

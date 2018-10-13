@@ -2163,7 +2163,7 @@ null==d?void 0:d))},attrHooks:{type:{set:function(a,b){if(!o.radioValue&&"radio"
     };
 
     ImagePreview.prototype.getPreviewUri = function(target_width, target_height) {
-      var b, back, canvas, color, color_codes, colors, ctx, di, g, height, hex, i, image_data, j, k, len, len1, pixel, pixels, r, ref, ref1, width;
+      var b, back, canvas, canvas2, color, color_codes, colors, ctx, di, g, height, hex, i, image_data, j, k, len, len1, pixel, pixels, r, ref, ref1, width;
       if (target_width == null) {
         target_width = 10;
       }
@@ -2199,17 +2199,14 @@ null==d?void 0:d))},attrHooks:{type:{set:function(a,b){if(!o.radioValue&&"radio"
         di += 4;
       }
       ctx.putImageData(image_data, 0, 0);
-
-      /*
-      		canvas2 = document.createElement("canvas")
-      		canvas2.width = width*3
-      		canvas2.height = height*3
-      		ctx = canvas2.getContext('2d')
-      		ctx.filter = "blur(1px)"
-      		ctx.drawImage(canvas, 1, 0, canvas.width*3, canvas.height*3)
-      		ctx.drawImage(canvas, 0, 1, canvas.width*3, canvas.height*3)
-      		ctx.drawImage(canvas, 0, 0, canvas.width*3, canvas.height*3) */
-      back = canvas.toDataURL("image/png");
+      canvas2 = document.createElement("canvas");
+      canvas2.width = width * 3;
+      canvas2.height = height * 3;
+      ctx = canvas2.getContext('2d');
+      ctx.filter = "blur(1px)";
+      ctx.drawImage(canvas, -5, -5, canvas.width * 3 + 10, canvas.height * 3 + 10);
+      ctx.drawImage(canvas, 0, 0, canvas.width * 3, canvas.height * 3);
+      back = canvas2.toDataURL("image/png");
       this.logEnd("Render");
       return back;
     };
@@ -2221,6 +2218,7 @@ null==d?void 0:d))},attrHooks:{type:{set:function(a,b){if(!o.radioValue&&"radio"
   window.ImagePreview = ImagePreview;
 
 }).call(this);
+
 
 
 /* ---- /1PEEPJuD41shof53g3WauQKi4k4wVe3Vzu/js/utils/ItemList.coffee ---- */
@@ -2458,6 +2456,7 @@ null==d?void 0:d))},attrHooks:{type:{set:function(a,b){if(!o.radioValue&&"radio"
   });
 
 }).call(this);
+
 
 
 /* ---- /1PEEPJuD41shof53g3WauQKi4k4wVe3Vzu/js/utils/Overlay.coffee ---- */
@@ -3638,6 +3637,7 @@ null==d?void 0:d))},attrHooks:{type:{set:function(a,b){if(!o.radioValue&&"radio"
 }).call(this);
 
 
+
 /* ---- /1PEEPJuD41shof53g3WauQKi4k4wVe3Vzu/js/AnonUser.coffee ---- */
 
 
@@ -4432,6 +4432,7 @@ null==d?void 0:d))},attrHooks:{type:{set:function(a,b){if(!o.radioValue&&"radio"
 }).call(this);
 
 
+
 /* ---- /1PEEPJuD41shof53g3WauQKi4k4wVe3Vzu/js/ContentProfile.coffee ---- */
 
 
@@ -5218,6 +5219,7 @@ null==d?void 0:d))},attrHooks:{type:{set:function(a,b){if(!o.radioValue&&"radio"
       }
       Page.cmd("feedListFollow", [], (function(_this) {
         return function(follows) {
+          var fn, key, ref1, val;
           _this.follows = follows;
           _this.menu.items = [];
           _this.menu.items.push([
@@ -5235,6 +5237,40 @@ null==d?void 0:d))},attrHooks:{type:{set:function(a,b){if(!o.radioValue&&"radio"
               return _this.handleFollowMenuItemClick("New followers", item);
             }), _this.follows["New followers"]
           ]);
+          _this.menu.items.push([
+            "Hide \"Hello ZeroMe!\" messages", (function(item) {
+              Page.local_storage.settings.hide_hello_zerome = !Page.local_storage.settings.hide_hello_zerome;
+              item[2] = Page.local_storage.settings.hide_hello_zerome;
+              Page.projector.scheduleRender();
+              Page.saveLocalStorage();
+              Page.content.need_update = true;
+              return false;
+            }), Page.local_storage.settings.hide_hello_zerome
+          ]);
+          if (((function() {
+            var results;
+            results = [];
+            for (key in Page.user_hubs) {
+              results.push(key);
+            }
+            return results;
+          })()).length > 1) {
+            _this.menu.items.push(["---"]);
+            ref1 = Page.user_hubs;
+            fn = function(key) {
+              return _this.menu.items.push([
+                "Use hub " + key, (function(item) {
+                  Page.local_storage.settings.hub = key;
+                  Page.saveLocalStorage();
+                  return Page.checkUser();
+                }), Page.user.row.site === key
+              ]);
+            };
+            for (key in ref1) {
+              val = ref1[key];
+              fn(key);
+            }
+          }
           _this.menu.toggle();
           return Page.projector.scheduleRender();
         };
@@ -5331,6 +5367,7 @@ null==d?void 0:d))},attrHooks:{type:{set:function(a,b){if(!o.radioValue&&"radio"
   window.Head = Head;
 
 }).call(this);
+
 
 
 /* ---- /1PEEPJuD41shof53g3WauQKi4k4wVe3Vzu/js/Post.coffee ---- */
@@ -6211,6 +6248,7 @@ null==d?void 0:d))},attrHooks:{type:{set:function(a,b){if(!o.radioValue&&"radio"
 }).call(this);
 
 
+
 /* ---- /1PEEPJuD41shof53g3WauQKi4k4wVe3Vzu/js/PostMeta.coffee ---- */
 
 
@@ -6434,7 +6472,6 @@ null==d?void 0:d))},attrHooks:{type:{set:function(a,b){if(!o.radioValue&&"radio"
   window.Trigger = Trigger;
 
 }).call(this);
-
 
 
 /* ---- /1PEEPJuD41shof53g3WauQKi4k4wVe3Vzu/js/User.coffee ---- */
@@ -7274,6 +7311,7 @@ null==d?void 0:d))},attrHooks:{type:{set:function(a,b){if(!o.radioValue&&"radio"
       this.server_info = null;
       this.address = null;
       this.user = false;
+      this.user_hubs = {};
       this.user_loaded = false;
       this.userdb = "1UDbADib99KE9d3qZ87NqJF2QLTHmMkoV";
       this.cache_time = Time.timestamp();
@@ -7284,11 +7322,15 @@ null==d?void 0:d))},attrHooks:{type:{set:function(a,b){if(!o.radioValue&&"radio"
       this.local_storage = null;
       this.local_storage_loaded = false;
       this.loadLocalStorage();
-      return this.on_site_info.then((function(_this) {
+      this.on_local_storage.then((function(_this) {
         return function() {
-          _this.checkUser(function() {
+          return _this.checkUser(function() {
             return _this.on_user_info.resolve();
           });
+        };
+      })(this));
+      return this.on_site_info.then((function(_this) {
+        return function() {
           if (indexOf.call(_this.site_info.settings.permissions, "Merger:ZeroMe") < 0) {
             return _this.cmd("wrapperPermissionAdd", "Merger:ZeroMe", function() {
               return _this.updateSiteInfo(function() {
@@ -7323,6 +7365,7 @@ null==d?void 0:d))},attrHooks:{type:{set:function(a,b){if(!o.radioValue&&"radio"
       this.content_profile = new ContentProfile();
       this.content_create_profile = new ContentCreateProfile();
       this.scrollwatcher = new Scrollwatcher();
+      this.trigger = new Trigger();
       if (base.href.indexOf("?") === -1) {
         this.route("");
       } else {
@@ -7340,6 +7383,8 @@ null==d?void 0:d))},attrHooks:{type:{set:function(a,b){if(!o.radioValue&&"radio"
       })(this));
       this.projector.replace($("#Head")[0], this.head.render);
       this.projector.replace($("#Overlay")[0], this.overlay.render);
+      this.projector.merge($("#Trigger"), this.trigger.render);
+      this.loadLocalStorage();
       return setInterval((function() {
         return Page.projector.scheduleRender();
       }), 60 * 1000);
@@ -7590,20 +7635,29 @@ null==d?void 0:d))},attrHooks:{type:{set:function(a,b){if(!o.radioValue&&"radio"
         }
       ], (function(_this) {
         return function(res) {
-          var i, len, row;
+          var i, len, row, user_row;
           if ((res != null ? res.length : void 0) > 0) {
-            _this.user = new User({
-              hub: res[0]["hub"],
-              auth_address: _this.site_info.auth_address
-            });
-            _this.user.row = res[0];
+            _this.user_hubs = {};
             for (i = 0, len = res.length; i < len; i++) {
               row = res[i];
+              _this.log("Possible site for user", row.site);
+              _this.user_hubs[row.site] = row;
               if (row.site === row.hub) {
-                _this.user.row = row;
+                user_row = row;
               }
             }
-            _this.log("Choosen site for user", _this.user.row.site, _this.user.row);
+            if (_this.user_hubs[_this.local_storage.settings.hub]) {
+              row = _this.user_hubs[_this.local_storage.settings.hub];
+              _this.log("Force hub", row.site);
+              user_row = row;
+              user_row.hub = row.site;
+            }
+            _this.log("Choosen site for user", user_row.site, user_row);
+            _this.user = new User({
+              hub: user_row.hub,
+              auth_address: _this.site_info.auth_address
+            });
+            _this.user.row = user_row;
             _this.user.updateInfo(cb);
           } else {
             _this.user = new AnonUser();

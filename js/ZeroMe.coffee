@@ -71,7 +71,7 @@ class ZeroMe extends ZeroFrame
 		@projector.replace($("#Head")[0], @head.render)
 		@projector.replace($("#Overlay")[0], @overlay.render)
 		@projector.merge($("#Trigger"), @trigger.render)
-		@loadSettings()
+		@loadLocalStorage()
 
 		# Update every minute to keep time since fields up-to date
 		setInterval ( ->
@@ -173,19 +173,6 @@ class ZeroMe extends ZeroFrame
 			params[key] = val
 		return "?"+Text.queryEncode(params)
 
-	loadSettings: ->
-		@on_site_info.then =>
-			@cmd "userGetSettings", [], (res) =>
-				if not res or res.error
-					@loadLocalStorage()
-				else
-					@local_storage = res
-					@local_storage.followed_users ?= {}
-					@local_storage.settings ?= {}
-					@local_storage.settings.show_after ?= ""
-					@local_storage.settings.show_since ?= ""
-					@local_storage.settings.filter_lang_list ?= {}
-					@on_local_storage.resolve(@local_storage)
 
 	loadLocalStorage: ->
 		@on_site_info.then =>
@@ -196,24 +183,15 @@ class ZeroMe extends ZeroFrame
 				@local_storage ?= {}
 				@local_storage.followed_users ?= {}
 				@local_storage.settings ?= {}
-				@local_storage.settings.show_after ?= ""
-				@local_storage.settings.show_since ?= ""
-				@local_storage.settings.filter_lang_list ?= {}
 				@on_local_storage.resolve(@local_storage)
 
 
-	saveLocalStorage: (cb) ->
+	saveLocalStorage: (cb=null) ->
+		@logStart "Saved localstorage"
 		if @local_storage
-			if Page.server_info.rev > 2140
-				@logStart "Saved local settings"
-				@cmd "userSetSettings", [@local_storage], (res) =>
-					@logEnd "Saved local settings"
-					cb?(res)
-			else
-				@logStart "Saved localstorage"
-				@cmd "wrapperSetLocalStorage", @local_storage, (res) =>
-					@logEnd "Saved localstorage"
-					cb?(res)
+			@cmd "wrapperSetLocalStorage", @local_storage, (res) =>
+				@logEnd "Saved localstorage"
+				cb?(res)
 
 
 	onOpenWebsocket: (e) =>
@@ -269,7 +247,7 @@ class ZeroMe extends ZeroFrame
 					if row.site == row.hub
 						user_row = row
 
-				if @user_hubs[@local_storage] and @user_hubs[@local_storage.settings.hub]
+				if @user_hubs[@local_storage.settings.hub]
 					row = @user_hubs[@local_storage.settings.hub]
 					@log "Force hub", row.site
 					user_row = row

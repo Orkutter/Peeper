@@ -8,6 +8,7 @@ class ZeroMe extends ZeroFrame
 		@server_info = null
 		@address = null
 		@user = false
+		@user_hubs = {}
 		@user_loaded = false
 		@userdb = "1UDbADib99KE9d3qZ87NqJF2QLTHmMkoV"
 		@cache_time = Time.timestamp()  # Image cache invalidation
@@ -20,10 +21,12 @@ class ZeroMe extends ZeroFrame
 		@local_storage_loaded = false
 		@loadLocalStorage()
 
-		@on_site_info.then =>
-			# Load user data
+		@on_local_storage.then =>
 			@checkUser =>
 				@on_user_info.resolve()
+
+		@on_site_info.then =>
+			# Load user data
 
 			# Check merger permissions
 			if "Merger:ZeroMe" not in @site_info.settings.permissions
@@ -50,6 +53,7 @@ class ZeroMe extends ZeroFrame
 		@content_profile = new ContentProfile()
 		@content_create_profile = new ContentCreateProfile()
 		@scrollwatcher = new Scrollwatcher()
+		@trigger = new Trigger()
 
 		if base.href.indexOf("?") == -1
 			@route("")
@@ -66,6 +70,8 @@ class ZeroMe extends ZeroFrame
 
 		@projector.replace($("#Head")[0], @head.render)
 		@projector.replace($("#Overlay")[0], @overlay.render)
+		@projector.merge($("#Trigger"), @trigger.render)
+		@loadLocalStorage()
 
 		# Update every minute to keep time since fields up-to date
 		setInterval ( ->
@@ -234,12 +240,22 @@ class ZeroMe extends ZeroFrame
 
 		Page.cmd "dbQuery", ["SELECT * FROM json WHERE directory = :directory AND user_name IS NOT NULL AND file_name = 'data.json' AND intro IS NOT NULL", {directory: "data/users/#{@site_info.auth_address}"}], (res) =>
 			if res?.length > 0
-				@user = new User({hub: res[0]["hub"], auth_address: @site_info.auth_address})
-				@user.row = res[0]
+				@user_hubs = {}
 				for row in res
+					@log "Possible site for user", row.site
+					@user_hubs[row.site] = row
 					if row.site == row.hub
-						@user.row = row
-				@log "Choosen site for user", @user.row.site, @user.row
+						user_row = row
+
+				if @user_hubs[@local_storage.settings.hub]
+					row = @user_hubs[@local_storage.settings.hub]
+					@log "Force hub", row.site
+					user_row = row
+					user_row.hub = row.site
+
+				@log "Choosen site for user", user_row.site, user_row
+				@user = new User({hub: user_row.hub, auth_address: @site_info.auth_address})
+				@user.row = user_row
 				@user.updateInfo(cb)
 			else
 				# No currently seeded user with that cert_user_id

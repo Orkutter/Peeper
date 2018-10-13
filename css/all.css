@@ -238,7 +238,16 @@ body:not(.logo-left) .head .logo { width: 42%; }
 
 
 
+<<<<<<< HEAD
 /* ---- /1PEEPJuD41shof53g3WauQKi4k4wVe3Vzu/css/Hub.css ---- */
+=======
+@media screen and (max-width: 1100px) {
+	.head .right { margin-right: 80px; }
+}
+
+
+/* ---- /1MeFqFfFFGQfa1J3gJyYYUvb5Lksczq7nH/css/Hub.css ---- */
+>>>>>>> 9301f46d16a74178cc7a18b8e63c5567863594c9
 
 
 .hub.card { padding: 21px; text-align: left; font-size: 18px; width: 80%; display: block; margin-left: auto; margin-right: auto; }
@@ -266,7 +275,7 @@ body:not(.logo-left) .head .logo { width: 42%; }
 .menu {
 	background-color: white; padding: 10px 0px; position: absolute; top: 0px; max-height: 0px; overflow: hidden; -webkit-transform: translate(-100%, -30px); -moz-transform: translate(-100%, -30px); -o-transform: translate(-100%, -30px); -ms-transform: translate(-100%, -30px); transform: translate(-100%, -30px) ; pointer-events: none;
 	-webkit-box-shadow: 0px 2px 8px rgba(0,0,0,0.1); -moz-box-shadow: 0px 2px 8px rgba(0,0,0,0.1); -o-box-shadow: 0px 2px 8px rgba(0,0,0,0.1); -ms-box-shadow: 0px 2px 8px rgba(0,0,0,0.1); box-shadow: 0px 2px 8px rgba(0,0,0,0.1) ; -webkit-border-radius: 2px; -moz-border-radius: 2px; -o-border-radius: 2px; -ms-border-radius: 2px; border-radius: 2px ; opacity: 0; -webkit-transition: opacity 0.2s ease-out, transform 1s ease-out, max-height 0.2s ease-in-out; -moz-transition: opacity 0.2s ease-out, transform 1s ease-out, max-height 0.2s ease-in-out; -o-transition: opacity 0.2s ease-out, transform 1s ease-out, max-height 0.2s ease-in-out; -ms-transition: opacity 0.2s ease-out, transform 1s ease-out, max-height 0.2s ease-in-out; transition: opacity 0.2s ease-out, transform 1s ease-out, max-height 0.2s ease-in-out ; z-index: 99;
-	display: inline-block; z-index: 999; margin-top: 50px;
+	display: inline-block; z-index: 99999999999999999; margin-top: 50px;
 }
 .menu-right { left: 100% }
 .menu.visible { opacity: 1; max-height: 350px; -webkit-transform: translate(-100%, 0px); -moz-transform: translate(-100%, 0px); -o-transform: translate(-100%, 0px); -ms-transform: translate(-100%, 0px); transform: translate(-100%, 0px) ; -webkit-transition: opacity 0.1s ease-out, transform 0.3s ease-out, max-height 0.3s ease-in-out; -moz-transition: opacity 0.1s ease-out, transform 0.3s ease-out, max-height 0.3s ease-in-out; -o-transition: opacity 0.1s ease-out, transform 0.3s ease-out, max-height 0.3s ease-in-out; -ms-transition: opacity 0.1s ease-out, transform 0.3s ease-out, max-height 0.3s ease-in-out; transition: opacity 0.1s ease-out, transform 0.3s ease-out, max-height 0.3s ease-in-out ; pointer-events: all }
@@ -451,12 +460,16 @@ textarea { background: rgba(255, 255, 255, 0.5); }
 .users .user .nameline { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; line-height: 26px }
 .users .user .intro { font-weight: 100; font-size: 13px; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; min-height: 18px; word-wrap: break-word; }
 .users .user .added { font-size: 11px; color: #999; margin-left: 6px; vertical-align: 3px; }
+<<<<<<< HEAD
 .users .user .intro-full { overflow-y: scroll; margin-left: -57px; padding-top: 18px; font-weight: 100; line-height: 1.5em; overflow: hidden; max-height: 400px; word-wrap: break-word; }
 .bgsetting { position: fixed; top: 55px; left: 5px; width: 0px!important; min-width: 166px!important; padding: 0px!important; z-index: 1 }
 .bg-settings { width: 160px; margin-left: 2px; }
 .bg-settings .uploadable .icon { margin: 0 auto; text-align: center; margin-left: 0px !important; height: 100px!important; }
 .no-left-padding { padding-left: 0px !important; text-align:center; }
 .users .user .bg-settings .uploadable .icon { margin-left: 67px; height: 67px; width: 75px; }
+=======
+.users .user .intro-full { margin-left: -57px; padding-top: 18px; font-weight: 100; line-height: 1.5em; overflow: hidden; word-wrap: break-word; }
+>>>>>>> 9301f46d16a74178cc7a18b8e63c5567863594c9
 .users .button-follow { float: right; margin-left: 5px; }
 .users .user.followed .button-follow, .users .user.followed .button-follow:hover {
 	background-color: #2ecc71 !important; border-color: #2ecc71 !important; color: #FFF; transform: rotate(45deg)
@@ -501,7 +514,11 @@ textarea { background: rgba(255, 255, 255, 0.5); }
 
 
 
+<<<<<<< HEAD
 /* ---- /1PEEPJuD41shof53g3WauQKi4k4wVe3Vzu/css/ZeroMe.css ---- */
+=======
+/* ---- /1MeFqFfFFGQfa1J3gJyYYUvb5Lksczq7nH/css/ZeroMe.css ---- */
+>>>>>>> 9301f46d16a74178cc7a18b8e63c5567863594c9
 
 
 body {
@@ -1095,6 +1112,7 @@ h5 { font-weight: normal; color: rgba(0, 0, 0, 0.5) }
 .fa-step-forward:before {
   content: "\f051";
 }
+<<<<<<< HEAD
 .fa-eject:before {
   content: "\f052";
 }
@@ -3148,3 +3166,158 @@ h5 { font-weight: normal; color: rgba(0, 0, 0, 0.5) }
 	100% { -webkit-transform: translateY(-3px); -moz-transform: translateY(-3px); -o-transform: translateY(-3px); -ms-transform: translateY(-3px); transform: translateY(-3px) ; }
 }
 
+=======
+
+
+
+/* ---- /1MeFqFfFFGQfa1J3gJyYYUvb5Lksczq7nH/css/mobile.css ---- */
+
+
+/* ZeroMe Mobile */
+#Trigger {
+display: none;
+}
+
+@media screen and (max-width: 750px) {
+html, body, p, th, td, li {
+font-size: medium !important;
+}
+
+.head-container {
+position: fixed;
+background-color: #fff;
+width: 100%;
+height: 50px;
+z-index: 30;
+}
+.head {
+width: 100%;
+background-color: #fff;
+}
+.head .logo {
+margin-left: 50px;
+position: absolute;
+z-index: 1;
+}
+.right {
+position: fixed;
+right: 0;
+top: 0;
+}
+#Content {
+width: 100%;
+margin-top: 60px;
+margin-bottom: 5px;
+}
+.col-center {
+background-color: #f6f7f8;
+width: 100%;
+overflow: auto;
+padding-left: 5px;
+padding-right: 5px;
+display: block;
+padding-top: 60px;
+margin-top: -60px;
+}
+.col-left, .col-right {
+position: fixed;
+top: 60px;
+left: -300px;
+background-color: #f6f7f8;
+height: 100%;
+margin-left: 0px;
+padding-top: 60px;
+padding-right: 15px;
+padding-left: 15px;
+margin-top: -60px;
+width: 300px;
+overflow-x: hidden;
+overflow-y: auto;
+z-index: 1;
+-webkit-transition: 0.3s all cubic-bezier(0.77, 0, 0.175, 1); -moz-transition: 0.3s all cubic-bezier(0.77, 0, 0.175, 1); -o-transition: 0.3s all cubic-bezier(0.77, 0, 0.175, 1); -ms-transition: 0.3s all cubic-bezier(0.77, 0, 0.175, 1); transition: 0.3s all cubic-bezier(0.77, 0, 0.175, 1) ;
+}
+.trigger-on .col-left, .trigger-on .col-right {
+left: 0px;
+-webkit-box-shadow: 0px 0px 30px #999; -moz-box-shadow: 0px 0px 30px #999; -o-box-shadow: 0px 0px 30px #999; -ms-box-shadow: 0px 0px 30px #999; box-shadow: 0px 0px 30px #999 ;
+}
+
+#Trigger {
+display: block;
+position: fixed;
+left: 5px;
+top: 3px;
+width: 40px;
+height: 40px;
+z-index: 100;
+border: 1px solid #bbb;
+-webkit-border-radius: 5px; -moz-border-radius: 5px; -o-border-radius: 5px; -ms-border-radius: 5px; border-radius: 5px ;
+}
+#Trigger .icon {
+background-image: url(../img/nav-icon.png);
+display: block;
+border: 12px solid #fff;
+height: 16px;
+outline: none;
+-webkit-border-radius: 5px; -moz-border-radius: 5px; -o-border-radius: 5px; -ms-border-radius: 5px; border-radius: 5px ;
+}
+.col-left.faded {
+opacity: 1;
+-webkit-filter: none; -moz-filter: none; -o-filter: none; -ms-filter: none; filter: none ;
+}
+.user.card {
+background-color: #f6f7f8;
+-webkit-box-shadow: none; -moz-box-shadow: none; -o-box-shadow: none; -ms-box-shadow: none; box-shadow: none ;
+margin-top: 10px;
+margin-left: -15px;
+}
+.activity-list .items {
+margin-bottom: 0px;
+}
+.more.small {
+padding: 10px;
+margin-bottom: 5px;
+background-color: #fff;
+border: 1px solid #eef0f1;
+-webkit-border-radius: 5px; -moz-border-radius: 5px; -o-border-radius: 5px; -ms-border-radius: 5px; border-radius: 5px ;
+}
+.post-create .icon-image {
+margin-left: unset;
+right: 40px;
+}
+.post {
+overflow: hidden;
+}
+#Overlay .img {
+width: 100% !important;
+margin-left: 0px !important;
+margin-top: -40px !important;
+left: 0px !important;
+}
+.post .img {
+width: 100% !important;
+max-height: 300px !important;
+min-height: 100px;
+background-size: cover !important;
+}
+.post .img .fullsize {
+background-size: cover !important;
+}
+.post .img .details {
+z-index: 50;
+}
+.post blockquote {
+padding-left: 10px;
+padding-top: 10px;
+padding-bottom: 10px;
+}
+}
+
+@media screen and (max-width: 500px) {
+.post .sep, .user .address {
+display: none;
+}
+.post .added {
+margin-left: 10px;
+}
+}
+>>>>>>> 9301f46d16a74178cc7a18b8e63c5567863594c9

@@ -7,8 +7,6 @@
   var Class,
     slice = [].slice;
 
-  jQuery(document).ready(function() {});
-
   Class = (function() {
     function Class() {}
 
@@ -2175,7 +2173,11 @@ null==d?void 0:d))},attrHooks:{type:{set:function(a,b){if(!o.radioValue&&"radio"
     };
 
     ImagePreview.prototype.getPreviewUri = function(target_width, target_height) {
+<<<<<<< HEAD
       var b, back, canvas, color, color_codes, colors, ctx, di, g, height, hex, i, image_data, j, k, len, len1, pixel, pixels, r, ref, ref1, width;
+=======
+      var b, back, canvas, canvas2, color, color_codes, colors, ctx, di, g, height, hex, i, image_data, j, k, len, len1, pixel, pixels, r, ref, ref1, width;
+>>>>>>> 9301f46d16a74178cc7a18b8e63c5567863594c9
       if (target_width == null) {
         target_width = 10;
       }
@@ -2211,6 +2213,7 @@ null==d?void 0:d))},attrHooks:{type:{set:function(a,b){if(!o.radioValue&&"radio"
         di += 4;
       }
       ctx.putImageData(image_data, 0, 0);
+<<<<<<< HEAD
 
       /*
       		canvas2 = document.createElement("canvas")
@@ -2222,6 +2225,16 @@ null==d?void 0:d))},attrHooks:{type:{set:function(a,b){if(!o.radioValue&&"radio"
       		ctx.drawImage(canvas, 0, 1, canvas.width*3, canvas.height*3)
       		ctx.drawImage(canvas, 0, 0, canvas.width*3, canvas.height*3) */
       back = canvas.toDataURL("image/png");
+=======
+      canvas2 = document.createElement("canvas");
+      canvas2.width = width * 3;
+      canvas2.height = height * 3;
+      ctx = canvas2.getContext('2d');
+      ctx.filter = "blur(1px)";
+      ctx.drawImage(canvas, -5, -5, canvas.width * 3 + 10, canvas.height * 3 + 10);
+      ctx.drawImage(canvas, 0, 0, canvas.width * 3, canvas.height * 3);
+      back = canvas2.toDataURL("image/png");
+>>>>>>> 9301f46d16a74178cc7a18b8e63c5567863594c9
       this.logEnd("Render");
       return back;
     };
@@ -2716,7 +2729,7 @@ null==d?void 0:d))},attrHooks:{type:{set:function(a,b){if(!o.radioValue&&"radio"
       options["renderer"] = marked_renderer;
       text = this.fixReply(text);
       text = marked(text, options);
-      text = text.replace(/(@[^\x00-\x1f^\x21-\x2f^\x3a-\x40^\x5b-\x60^\x7b-\x7f]{1,16}):/g, '<b class="reply-name">$1</b>:');
+      text = text.replace(/(\s|>|^)(@[^\s]{1,25}):/g, '$1<b class="reply-name">$2</b>:');
       return this.fixHtmlLinks(text);
     };
 
@@ -2726,7 +2739,7 @@ null==d?void 0:d))},attrHooks:{type:{set:function(a,b){if(!o.radioValue&&"radio"
         return "<a href=\"" + (match.replace(/&amp;/g, '&')) + "\">" + match + "</a>";
       });
       text = text.replace(/\n/g, '<br>');
-      text = text.replace(/(@[^\x00-\x1f^\x21-\x2f^\x3a-\x40^\x5b-\x60^\x7b-\x7f]{1,16}):/g, '<b class="reply-name">$1</b>:');
+      text = text.replace(/(\s|>|^)(@[^\s]{1,25}):/g, '$1<b class="reply-name">$2</b>:');
       text = this.fixHtmlLinks(text);
       return text;
     };
@@ -2740,6 +2753,7 @@ null==d?void 0:d))},attrHooks:{type:{set:function(a,b){if(!o.radioValue&&"radio"
       if (window.is_proxy) {
         text = text.replace(/href="http:\/\/(127.0.0.1|localhost):43110/gi, 'href="http://zero');
         text = text.replace(/http:\/\/zero\/([^\/]+\.bit)/, "http://$1");
+        text = text.replace(/href="\/([A-Za-z0-9]{26,35})/g, 'href="http://zero/$1');
       } else {
         text = text.replace(/href="http:\/\/(127.0.0.1|localhost):43110/g, 'href="');
       }
@@ -2752,7 +2766,9 @@ null==d?void 0:d))},attrHooks:{type:{set:function(a,b){if(!o.radioValue&&"radio"
       var back;
       if (window.is_proxy) {
         back = link.replace(/http:\/\/(127.0.0.1|localhost):43110/, 'http://zero');
-        return back.replace(/http:\/\/zero\/([^\/]+\.bit)/, "http://$1");
+        back = back.replace(/http:\/\/zero\/([^\/]+\.bit)/, "http://$1");
+        back = back.replace(/\/([A-Za-z0-9]{26,35})/, "http://zero/$1");
+        return back;
       } else {
         return link.replace(/http:\/\/(127.0.0.1|localhost):43110/, '');
       }
@@ -2936,7 +2952,11 @@ null==d?void 0:d))},attrHooks:{type:{set:function(a,b){if(!o.radioValue&&"radio"
 
 
 
+<<<<<<< HEAD
 /* ---- /1PEEPJuD41shof53g3WauQKi4k4wVe3Vzu/js/utils/Time.coffee ---- */
+=======
+/* ---- /1MeFqFfFFGQfa1J3gJyYYUvb5Lksczq7nH/js/utils/Time.coffee ---- */
+>>>>>>> 9301f46d16a74178cc7a18b8e63c5567863594c9
 
 
 (function() {
@@ -3760,6 +3780,7 @@ null==d?void 0:d))},attrHooks:{type:{set:function(a,b){if(!o.radioValue&&"radio"
 
 
 (function() {
+<<<<<<< HEAD
   window.bgString = function(color, image) {
     if (!color) {
       color = "#FFFFF";
@@ -3824,6 +3845,26 @@ null==d?void 0:d))},attrHooks:{type:{set:function(a,b){if(!o.radioValue&&"radio"
       this.render = bind(this.render, this);
       this.renderCheck = bind(this.renderCheck, this);
       this.section = bind(this.section, this);
+=======
+  var ContentCreateProfile,
+    bind = function(fn, me){ return function(){ return fn.apply(me, arguments); }; },
+    extend = function(child, parent) { for (var key in parent) { if (hasProp.call(parent, key)) child[key] = parent[key]; } function ctor() { this.constructor = child; } ctor.prototype = parent.prototype; child.prototype = new ctor(); child.__super__ = parent.prototype; return child; },
+    hasProp = {}.hasOwnProperty;
+
+  ContentCreateProfile = (function(superClass) {
+    extend(ContentCreateProfile, superClass);
+
+    function ContentCreateProfile() {
+      this.update = bind(this.update, this);
+      this.render = bind(this.render, this);
+      this.renderDefaultHubs = bind(this.renderDefaultHubs, this);
+      this.renderSeededHubs = bind(this.renderSeededHubs, this);
+      this.renderHub = bind(this.renderHub, this);
+      this.updateHubs = bind(this.updateHubs, this);
+      this.joinHub = bind(this.joinHub, this);
+      this.handleJoinClick = bind(this.handleJoinClick, this);
+      this.handleDownloadClick = bind(this.handleDownloadClick, this);
+>>>>>>> 9301f46d16a74178cc7a18b8e63c5567863594c9
       this.loaded = true;
       this.need_update = false;
     }
@@ -3851,6 +3892,7 @@ null==d?void 0:d))},attrHooks:{type:{set:function(a,b){if(!o.radioValue&&"radio"
       }
     };
 
+<<<<<<< HEAD
     ContentBadges.prototype.renderCheck = function(key, name, desc, attrs) {
       var base, ref;
       if (desc == null) {
@@ -3982,6 +4024,39 @@ null==d?void 0:d))},attrHooks:{type:{set:function(a,b){if(!o.radioValue&&"radio"
     ContentCreateProfile.prototype.handleJoinClick = function(e) {
       var hub, user;
       hub = e.target.attributes.address.value;
+=======
+    ContentCreateProfile.prototype.handleJoinClick = function(e) {
+      var hub, hub_address, hub_name, ref, ref1;
+      hub_address = e.target.attributes.address.value;
+      if ((ref = Page.user) != null ? ref.hub : void 0) {
+        hub_name = (ref1 = (function() {
+          var i, len, ref2, results;
+          ref2 = this.hubs;
+          results = [];
+          for (i = 0, len = ref2.length; i < len; i++) {
+            hub = ref2[i];
+            if (hub.address === Page.user.hub) {
+              results.push(hub.content.title);
+            }
+          }
+          return results;
+        }).call(this)) != null ? ref1[0] : void 0;
+        if (hub_name == null) {
+          hub_name = Page.user.hub;
+        }
+        return Page.cmd("wrapperConfirm", ["You already have profile on hub <b>" + hub_name + "</b>,<br>are you sure you want to create a new one?", "Create new profile"], (function(_this) {
+          return function() {
+            return _this.joinHub(hub_address);
+          };
+        })(this));
+      } else {
+        return this.joinHub(hub_address);
+      }
+    };
+
+    ContentCreateProfile.prototype.joinHub = function(hub) {
+      var user;
+>>>>>>> 9301f46d16a74178cc7a18b8e63c5567863594c9
       user = new User({
         hub: hub,
         auth_address: Page.site_info.auth_address
@@ -4019,6 +4094,7 @@ null==d?void 0:d))},attrHooks:{type:{set:function(a,b){if(!o.radioValue&&"radio"
         return function(sites) {
           var address, content, ref, results;
           Page.cmd("dbQuery", "SELECT * FROM json", function(users) {
+<<<<<<< HEAD
             var address, hubs, i, len, name, ref, site, site_users, user;
             site_users = {};
             for (i = 0, len = users.length; i < len; i++) {
@@ -4028,6 +4104,15 @@ null==d?void 0:d))},attrHooks:{type:{set:function(a,b){if(!o.radioValue&&"radio"
               } else {
                 site_users[name] = [];
               };
+=======
+            var address, hubs, i, len, name, site, site_users, user;
+            site_users = {};
+            for (i = 0, len = users.length; i < len; i++) {
+              user = users[i];
+              if (site_users[name = user.hub] == null) {
+                site_users[name] = [];
+              }
+>>>>>>> 9301f46d16a74178cc7a18b8e63c5567863594c9
               site_users[user.hub].push(user);
             }
             hubs = [];
@@ -4479,6 +4564,7 @@ null==d?void 0:d))},attrHooks:{type:{set:function(a,b){if(!o.radioValue&&"radio"
       this.update = bind(this.update, this);
       this.render = bind(this.render, this);
       this.handleOptionalHelpClick = bind(this.handleOptionalHelpClick, this);
+<<<<<<< HEAD
       this.settingsClick = bind(this.settingsClick, this);
       this.handleEditClick = bind(this.handleEditClick, this);
       this.handleBackgroundUpload = bind(this.handleBackgroundUpload, this);
@@ -4486,6 +4572,11 @@ null==d?void 0:d))},attrHooks:{type:{set:function(a,b){if(!o.radioValue&&"radio"
       this.handleUserNameSave = bind(this.handleUserNameSave, this);
       this.handleIntroSave = bind(this.handleIntroSave, this);
       this.handleBgColorSave = bind(this.handleBgColorSave, this);
+=======
+      this.handleAvatarUpload = bind(this.handleAvatarUpload, this);
+      this.handleUserNameSave = bind(this.handleUserNameSave, this);
+      this.handleIntroSave = bind(this.handleIntroSave, this);
+>>>>>>> 9301f46d16a74178cc7a18b8e63c5567863594c9
       this.filter = bind(this.filter, this);
       this.findUser = bind(this.findUser, this);
       this.setUser = bind(this.setUser, this);
@@ -4747,7 +4838,10 @@ null==d?void 0:d))},attrHooks:{type:{set:function(a,b){if(!o.radioValue&&"radio"
           return function(res) {
             var ref3;
             if (res) {
+<<<<<<< HEAD
               _this.user.row = res;
+=======
+>>>>>>> 9301f46d16a74178cc7a18b8e63c5567863594c9
               _this.owned = _this.user.auth_address === ((ref3 = Page.user) != null ? ref3.auth_address : void 0);
               if (_this.owned && !_this.editable_intro) {
                 _this.editable_bgcolor = new Editable("div", _this.handleBgColorSave);
@@ -4789,7 +4883,11 @@ null==d?void 0:d))},attrHooks:{type:{set:function(a,b){if(!o.radioValue&&"radio"
           };
         })(this));
       }
+<<<<<<< HEAD
       if (!((ref3 = this.user) != null ? (ref4 = ref3.row) != null ? ref4.user_name : void 0 : void 0)) {
+=======
+      if (!((ref3 = this.user) != null ? (ref4 = ref3.row) != null ? ref4.cert_user_id : void 0 : void 0)) {
+>>>>>>> 9301f46d16a74178cc7a18b8e63c5567863594c9
         if (this.loaded) {
           return h("div#Content.center." + this.auth_address, [h("div.user-notfound", "User not found or muted")]);
         } else {
@@ -5252,6 +5350,10 @@ null==d?void 0:d))},attrHooks:{type:{set:function(a,b){if(!o.radioValue&&"radio"
       }
       Page.cmd("feedListFollow", [], (function(_this) {
         return function(follows) {
+<<<<<<< HEAD
+=======
+          var fn, key, ref1, val;
+>>>>>>> 9301f46d16a74178cc7a18b8e63c5567863594c9
           _this.follows = follows;
           _this.menu.items = [];
           _this.menu.items.push([
@@ -5269,6 +5371,43 @@ null==d?void 0:d))},attrHooks:{type:{set:function(a,b){if(!o.radioValue&&"radio"
               return _this.handleFollowMenuItemClick("New followers", item);
             }), _this.follows["New followers"]
           ]);
+<<<<<<< HEAD
+=======
+          _this.menu.items.push([
+            "Hide \"Hello ZeroMe!\" messages", (function(item) {
+              Page.local_storage.settings.hide_hello_zerome = !Page.local_storage.settings.hide_hello_zerome;
+              item[2] = Page.local_storage.settings.hide_hello_zerome;
+              Page.projector.scheduleRender();
+              Page.saveLocalStorage();
+              Page.content.need_update = true;
+              return false;
+            }), Page.local_storage.settings.hide_hello_zerome
+          ]);
+          if (((function() {
+            var results;
+            results = [];
+            for (key in Page.user_hubs) {
+              results.push(key);
+            }
+            return results;
+          })()).length > 1) {
+            _this.menu.items.push(["---"]);
+            ref1 = Page.user_hubs;
+            fn = function(key) {
+              return _this.menu.items.push([
+                "Use hub " + key, (function(item) {
+                  Page.local_storage.settings.hub = key;
+                  Page.saveLocalStorage();
+                  return Page.checkUser();
+                }), Page.user.row.site === key
+              ]);
+            };
+            for (key in ref1) {
+              val = ref1[key];
+              fn(key);
+            }
+          }
+>>>>>>> 9301f46d16a74178cc7a18b8e63c5567863594c9
           _this.menu.toggle();
           return Page.projector.scheduleRender();
         };
@@ -5292,13 +5431,18 @@ null==d?void 0:d))},attrHooks:{type:{set:function(a,b){if(!o.radioValue&&"radio"
     };
 
     Head.prototype.render = function() {
+<<<<<<< HEAD
       var el, ref, ref1, ref2, ref3;
+=======
+      var ref, ref1, ref2, ref3;
+>>>>>>> 9301f46d16a74178cc7a18b8e63c5567863594c9
       return h("div.head.center", [
         Page.getSetting("logo_left") ? h("div.logo", h("img", {
           src: "img/logo.svg",
           height: 40,
           title: "Peeper",
           onerror: "this.src='img/logo.png'; this.onerror=null;"
+<<<<<<< HEAD
         })) : void 0, h("ul", [
           (function() {
             var i, len, ref, results;
@@ -5319,6 +5463,9 @@ null==d?void 0:d))},attrHooks:{type:{set:function(a,b){if(!o.radioValue&&"radio"
           title: "Peeper",
           onerror: "this.src='img/logo.png'; this.onerror=null;"
         })) : void 0, ((ref = Page.user) != null ? ref.hub : void 0) ? h("div.right.authenticated", [
+=======
+        })), ((ref = Page.user) != null ? ref.hub : void 0) ? h("div.right.authenticated", [
+>>>>>>> 9301f46d16a74178cc7a18b8e63c5567863594c9
           h("div.user", h("a.name.link", {
             href: Page.user.getLink(),
             onclick: Page.handleLinkClick
@@ -5828,8 +5975,12 @@ null==d?void 0:d))},attrHooks:{type:{set:function(a,b){if(!o.radioValue&&"radio"
 }).call(this);
 
 
+<<<<<<< HEAD
 
 /* ---- /1PEEPJuD41shof53g3WauQKi4k4wVe3Vzu/js/PostCreate.coffee ---- */
+=======
+/* ---- /1MeFqFfFFGQfa1J3gJyYYUvb5Lksczq7nH/js/PostCreate.coffee ---- */
+>>>>>>> 9301f46d16a74178cc7a18b8e63c5567863594c9
 
 
 (function() {
@@ -6423,11 +6574,69 @@ null==d?void 0:d))},attrHooks:{type:{set:function(a,b){if(!o.radioValue&&"radio"
 }).call(this);
 
 
+<<<<<<< HEAD
 
 /* ---- /1PEEPJuD41shof53g3WauQKi4k4wVe3Vzu/js/User.coffee ---- */
 
 
 (function() {
+=======
+/* ---- /1MeFqFfFFGQfa1J3gJyYYUvb5Lksczq7nH/js/Trigger.coffee ---- */
+
+
+(function() {
+  var Trigger,
+    bind = function(fn, me){ return function(){ return fn.apply(me, arguments); }; },
+    extend = function(child, parent) { for (var key in parent) { if (hasProp.call(parent, key)) child[key] = parent[key]; } function ctor() { this.constructor = child; } ctor.prototype = parent.prototype; child.prototype = new ctor(); child.__super__ = parent.prototype; return child; },
+    hasProp = {}.hasOwnProperty;
+
+  Trigger = (function(superClass) {
+    extend(Trigger, superClass);
+
+    function Trigger() {
+      this.render = bind(this.render, this);
+      this.handleTitleClick = bind(this.handleTitleClick, this);
+      this.trigger_off = true;
+    }
+
+    Trigger.prototype.handleTitleClick = function() {
+      if (this.trigger_off) {
+        this.trigger_off = false;
+        document.body.classList.add("trigger-on");
+      } else {
+        document.body.classList.remove("trigger-on");
+        this.trigger_off = true;
+      }
+      return false;
+    };
+
+    Trigger.prototype.render = function() {
+      return h("div.Trigger", {
+        classes: {
+          "trigger-off": this.trigger_off
+        }
+      }, [
+        h("a.icon", {
+          "href": "#Trigger",
+          onclick: this.handleTitleClick
+        })
+      ]);
+    };
+
+    return Trigger;
+
+  })(Class);
+
+  window.Trigger = Trigger;
+
+}).call(this);
+
+
+/* ---- /1MeFqFfFFGQfa1J3gJyYYUvb5Lksczq7nH/js/User.coffee ---- */
+
+
+(function() {
+>>>>>>> 9301f46d16a74178cc7a18b8e63c5567863594c9
   var User,
     bind = function(fn, me){ return function(){ return fn.apply(me, arguments); }; },
     extend = function(child, parent) { for (var key in parent) { if (hasProp.call(parent, key)) child[key] = parent[key]; } function ctor() { this.constructor = child; } ctor.prototype = parent.prototype; child.prototype = new ctor(); child.__super__ = parent.prototype; return child; },
@@ -6443,9 +6652,12 @@ null==d?void 0:d))},attrHooks:{type:{set:function(a,b){if(!o.radioValue&&"radio"
       this.handleDownloadClick = bind(this.handleDownloadClick, this);
       this.download = bind(this.download, this);
       this.handleFollowClick = bind(this.handleFollowClick, this);
+<<<<<<< HEAD
       this.saveUserdb = bind(this.saveUserdb, this);
       this.applyBackground = bind(this.applyBackground, this);
       this.renderBackground = bind(this.renderBackground, this);
+=======
+>>>>>>> 9301f46d16a74178cc7a18b8e63c5567863594c9
       this.renderAvatar = bind(this.renderAvatar, this);
       this.hasHelp = bind(this.hasHelp, this);
       this.updateInfo = bind(this.updateInfo, this);
@@ -6477,6 +6689,9 @@ null==d?void 0:d))},attrHooks:{type:{set:function(a,b){if(!o.radioValue&&"radio"
           var row;
           row = res[0];
           if (row) {
+            if (row.user_name === "") {
+              row.user_name = row.cert_user_id;
+            }
             row.auth_address = row.directory.replace("data/users/", "");
             _this.setRow(row);
             return typeof cb === "function" ? cb(row) : void 0;
@@ -6747,7 +6962,11 @@ null==d?void 0:d))},attrHooks:{type:{set:function(a,b){if(!o.radioValue&&"radio"
             };
             changed = true;
           }
+<<<<<<< HEAD
           ref = ["avatar", "hub", "intro", "user_name", "bg", "bgColor"];
+=======
+          ref = ["avatar", "hub", "intro", "user_name"];
+>>>>>>> 9301f46d16a74178cc7a18b8e63c5567863594c9
           for (j = 0, len = ref.length; j < len; j++) {
             field = ref[j];
             if (userdb_data.user[0][field] !== data[field]) {
@@ -7249,7 +7468,10 @@ null==d?void 0:d))},attrHooks:{type:{set:function(a,b){if(!o.radioValue&&"radio"
       this.needSite = bind(this.needSite, this);
       this.updateServerInfo = bind(this.updateServerInfo, this);
       this.updateSiteInfo = bind(this.updateSiteInfo, this);
+<<<<<<< HEAD
       this.otherClasses = bind(this.otherClasses, this);
+=======
+>>>>>>> 9301f46d16a74178cc7a18b8e63c5567863594c9
       this.onOpenWebsocket = bind(this.onOpenWebsocket, this);
       this.handleLinkClick = bind(this.handleLinkClick, this);
       this.renderContent = bind(this.renderContent, this);
@@ -7263,6 +7485,7 @@ null==d?void 0:d))},attrHooks:{type:{set:function(a,b){if(!o.radioValue&&"radio"
       this.server_info = null;
       this.address = null;
       this.user = false;
+      this.user_hubs = {};
       this.user_loaded = false;
       this.userdb = "1UDbADib99KE9d3qZ87NqJF2QLTHmMkoV";
       this.cache_time = Time.timestamp();
@@ -7271,13 +7494,24 @@ null==d?void 0:d))},attrHooks:{type:{set:function(a,b){if(!o.radioValue&&"radio"
       this.on_user_info = new Promise();
       this.on_loaded = new Promise();
       this.local_storage = null;
+<<<<<<< HEAD
       this.local_storage_loaded = false;
       this.loadLocalStorage();
       return this.on_site_info.then((function(_this) {
+=======
+      this.on_local_storage.then((function(_this) {
+>>>>>>> 9301f46d16a74178cc7a18b8e63c5567863594c9
         return function() {
-          _this.checkUser(function() {
+          return _this.checkUser(function() {
             return _this.on_user_info.resolve();
           });
+<<<<<<< HEAD
+=======
+        };
+      })(this));
+      return this.on_site_info.then((function(_this) {
+        return function() {
+>>>>>>> 9301f46d16a74178cc7a18b8e63c5567863594c9
           if (indexOf.call(_this.site_info.settings.permissions, "Merger:ZeroMe") < 0) {
             return _this.cmd("wrapperPermissionAdd", "Merger:ZeroMe", function() {
               return _this.updateSiteInfo(function() {
@@ -7312,6 +7546,7 @@ null==d?void 0:d))},attrHooks:{type:{set:function(a,b){if(!o.radioValue&&"radio"
       this.content_profile = new ContentProfile();
       this.content_create_profile = new ContentCreateProfile();
       this.scrollwatcher = new Scrollwatcher();
+      this.trigger = new Trigger();
       if (base.href.indexOf("?") === -1) {
         this.route("");
       } else {
@@ -7327,8 +7562,15 @@ null==d?void 0:d))},attrHooks:{type:{set:function(a,b){if(!o.radioValue&&"radio"
           });
         };
       })(this));
+<<<<<<< HEAD
       this.projector.replace($("#Head")[0], this.head.render);
       this.projector.replace($("#Overlay")[0], this.overlay.render);
+=======
+      this.projector.replace($("#Head"), this.head.render);
+      this.projector.replace($("#Overlay"), this.overlay.render);
+      this.projector.merge($("#Trigger"), this.trigger.render);
+      this.loadLocalStorage();
+>>>>>>> 9301f46d16a74178cc7a18b8e63c5567863594c9
       return setInterval((function() {
         return Page.projector.scheduleRender();
       }), 60 * 1000);
@@ -7457,7 +7699,11 @@ null==d?void 0:d))},attrHooks:{type:{set:function(a,b){if(!o.radioValue&&"radio"
         return function() {
           _this.logStart("Loaded localstorage");
           return _this.cmd("wrapperGetLocalStorage", [], function(local_storage) {
+<<<<<<< HEAD
             var base1, base2, ref, ref1, ref2;
+=======
+            var base1, base2;
+>>>>>>> 9301f46d16a74178cc7a18b8e63c5567863594c9
             _this.local_storage = local_storage;
             _this.logEnd("Loaded localstorage");
             _this.local_storage_loaded = true;
@@ -7465,6 +7711,7 @@ null==d?void 0:d))},attrHooks:{type:{set:function(a,b){if(!o.radioValue&&"radio"
               ref;
             } else {
               _this.local_storage = {};
+<<<<<<< HEAD
             };
                         if ((ref1 = (base1 = _this.local_storage).followed_users) != null) {
               ref1;
@@ -7476,6 +7723,15 @@ null==d?void 0:d))},attrHooks:{type:{set:function(a,b){if(!o.radioValue&&"radio"
             } else {
               base2.settings = {};
             };
+=======
+            }
+            if ((base1 = _this.local_storage).followed_users == null) {
+              base1.followed_users = {};
+            }
+            if ((base2 = _this.local_storage).settings == null) {
+              base2.settings = {};
+            }
+>>>>>>> 9301f46d16a74178cc7a18b8e63c5567863594c9
             return _this.on_local_storage.resolve(_this.local_storage);
           });
         };
@@ -7579,6 +7835,7 @@ null==d?void 0:d))},attrHooks:{type:{set:function(a,b){if(!o.radioValue&&"radio"
         }
       ], (function(_this) {
         return function(res) {
+<<<<<<< HEAD
           var i, len, row;
           if ((res != null ? res.length : void 0) > 0) {
             _this.user = new User({
@@ -7588,11 +7845,31 @@ null==d?void 0:d))},attrHooks:{type:{set:function(a,b){if(!o.radioValue&&"radio"
             _this.user.row = res[0];
             for (i = 0, len = res.length; i < len; i++) {
               row = res[i];
+=======
+          var i, len, row, user_row;
+          if ((res != null ? res.length : void 0) > 0) {
+            _this.user_hubs = {};
+            for (i = 0, len = res.length; i < len; i++) {
+              row = res[i];
+              _this.log("Possible site for user", row.site);
+              _this.user_hubs[row.site] = row;
+>>>>>>> 9301f46d16a74178cc7a18b8e63c5567863594c9
               if (row.site === row.hub) {
-                _this.user.row = row;
+                user_row = row;
               }
             }
-            _this.log("Choosen site for user", _this.user.row.site, _this.user.row);
+            if (_this.user_hubs[_this.local_storage.settings.hub]) {
+              row = _this.user_hubs[_this.local_storage.settings.hub];
+              _this.log("Force hub", row.site);
+              user_row = row;
+              user_row.hub = row.site;
+            }
+            _this.log("Choosen site for user", user_row.site, user_row);
+            _this.user = new User({
+              hub: user_row.hub,
+              auth_address: _this.site_info.auth_address
+            });
+            _this.user.row = user_row;
             _this.user.updateInfo(cb);
           } else {
             _this.user = new AnonUser();

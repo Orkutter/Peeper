@@ -2,7 +2,7 @@
 .users .user .nameline { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; line-height: 26px }
 .users .user .intro { font-weight: 100; font-size: 13px; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; min-height: 18px; word-wrap: break-word; }
 .users .user .added { font-size: 11px; color: #999; margin-left: 6px; vertical-align: 3px; }
-.users .user .intro-full { overflow-y: scroll; margin-left: -57px; padding-top: 18px; font-weight: 100; line-height: 1.5em; overflow: hidden; max-height: 400px; word-wrap: break-word; }
+.users .user .intro-full { margin-left: -57px; padding-top: 18px; font-weight: 100; line-height: 1.5em; overflow: hidden; word-wrap: break-word; }
 .bgsetting { position: fixed; top: 55px; left: 5px; width: 0px!important; min-width: 166px!important; padding: 0px!important; z-index: 1 }
 .bg-settings { width: 160px; margin-left: 2px; }
 .bg-settings .uploadable .icon { margin: 0 auto; text-align: center; margin-left: 0px !important; height: 100px!important; }
@@ -47,5 +47,13 @@
 
 .user .help { margin-left: -57px; font-size: 14px; color: #AAA; }
 
-.user-mute { display: block; margin-top: 16px; font-size: 14px; margin-bottom: 16px; color: #555; }
+.user-mute { text-align: center; display: block; margin-top: -22px; color: #999; font-size: 14px; margin-bottom: 30px; }
+.checkbox-skin { background-color: #CCC; width: 35px; height: 18px; border-radius: 15px; transition: all 0.3s ease-in-out; display: inline-block; }
+.checkbox-skin:before {
+	content: ""; position: relative; width: 14px; background-color: white; height: 14px; display: block; border-radius: 100%; margin-top: 2px; margin-left: 2px;
+	transition: all 0.5s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+}
+.checkbox .title { display: inline; line-height: 30px; vertical-align: 4px; margin-left: 11px; }
+.checkbox.checked .checkbox-skin:before { margin-left: 19px; }
+.checkbox.checked .checkbox-skin { background-color: #2ECC71; }
 .user-notfound { text-align: center; font-size: 22px; margin-top: 100px; font-weight: lighter; }

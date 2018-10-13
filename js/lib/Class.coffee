@@ -1,5 +1,3 @@
-jQuery(document).ready ->
-
 class Class
 	trace: true
 

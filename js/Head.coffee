@@ -38,6 +38,26 @@ class Head extends Class
 				return @handleFollowMenuItemClick("New followers", item)
 			), @follows["New followers"]]
 
+			@menu.items.push ["Hide \"Hello ZeroMe!\" messages", ( (item) =>
+				Page.local_storage.settings.hide_hello_zerome = not Page.local_storage.settings.hide_hello_zerome
+				item[2] = Page.local_storage.settings.hide_hello_zerome
+				Page.projector.scheduleRender()
+				Page.saveLocalStorage()
+				Page.content.need_update = true
+				return false
+			), Page.local_storage.settings.hide_hello_zerome]
+
+			if (key for key of Page.user_hubs).length > 1
+				@menu.items.push ["---"]
+				for key, val of Page.user_hubs
+					((key) =>
+						@menu.items.push ["Use hub #{key}", ( (item) =>
+							Page.local_storage.settings.hub = key
+							Page.saveLocalStorage()
+							Page.checkUser()
+						), Page.user.row.site == key]
+					)(key)
+					
 			@menu.toggle()
 			Page.projector.scheduleRender()
 		return false

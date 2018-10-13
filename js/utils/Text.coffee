@@ -20,7 +20,7 @@ class Text
 		options["renderer"] = marked_renderer
 		text = @fixReply(text)
 		text = marked(text, options)
-		text = text.replace(/(@[^\x00-\x1f^\x21-\x2f^\x3a-\x40^\x5b-\x60^\x7b-\x7f]{1,16}):/g, '<b class="reply-name">$1</b>:')  # Highlight usernames
+		text = text.replace(/(\s|>|^)(@[^\s]{1,25}):/g, '$1<b class="reply-name">$2</b>:')  # Highlight usernames
 		return @fixHtmlLinks text
 
 	renderLinks: (text) =>
@@ -28,7 +28,7 @@ class Text
 		text = text.replace /(https?:\/\/[^\s)]+)/g, (match) ->
 			return "<a href=\"#{match.replace(/&amp;/g, '&')}\">#{match}</a>"  # UnSanitize &amp; -> & in links
 		text = text.replace(/\n/g, '<br>')
-		text = text.replace(/(@[^\x00-\x1f^\x21-\x2f^\x3a-\x40^\x5b-\x60^\x7b-\x7f]{1,16}):/g, '<b class="reply-name">$1</b>:')
+		text = text.replace(/(\s|>|^)(@[^\s]{1,25}):/g, '$1<b class="reply-name">$2</b>:')
 		text = @fixHtmlLinks(text)
 
 		return text
@@ -43,6 +43,7 @@ class Text
 		if window.is_proxy
 			text = text.replace(/href="http:\/\/(127.0.0.1|localhost):43110/gi, 'href="http://zero')
 			text = text.replace(/http:\/\/zero\/([^\/]+\.bit)/, "http://$1")
+			text = text.replace(/href="\/([A-Za-z0-9]{26,35})/g, 'href="http://zero/$1')  # Links without 127.0.0.1
 		else
 			text = text.replace(/href="http:\/\/(127.0.0.1|localhost):43110/g, 'href="')
 		# Add no-refresh linking to local links
@@ -55,7 +56,9 @@ class Text
 	fixLink: (link) ->
 		if window.is_proxy
 			back = link.replace(/http:\/\/(127.0.0.1|localhost):43110/, 'http://zero')
-			return back.replace(/http:\/\/zero\/([^\/]+\.bit)/, "http://$1")  # Domain links
+			back = back.replace(/http:\/\/zero\/([^\/]+\.bit)/, "http://$1")  # Domain links
+			back = back.replace(/\/([A-Za-z0-9]{26,35})/, "http://zero/$1")  # Links without 127.0.0.1
+			return back
 		else
 			return link.replace(/http:\/\/(127.0.0.1|localhost):43110/, '')
 

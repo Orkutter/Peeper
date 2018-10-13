@@ -4,6 +4,7 @@
  "description": "Updated version of the old and basic ZeroMe.",
  "domain": "peeper.bit",
  "favicon": "img/logo.ico",
+ "cloneable": true,
  "files": {
   "LICENSE": {
    "sha512": "7a0429020657fcf4b6035c393b10a98978360e99f3b0a092373057378a406bf0",
@@ -65,6 +66,10 @@
    "sha512": "8ce95b5e5cad18193598daab0380c4824d8b4a38984a22ae088d7d2defb994c7",
    "size": 7725
   },
+  "dbschema.json": {
+   "sha512": "7e9fb8aff94c46b9874b9c10f2e056549664a671468f73094cb77cd85a4dd7d2",
+   "size": 3550
+  },
   "img/loading-circle.gif": {
    "sha512": "339baf1bccb9b80ae29c2493e73b40cf0588c96fc095954b475dea0538aaa929",
    "size": 2346
@@ -77,13 +82,13 @@
    "sha512": "8b33ede553258cd08ff1c8625ffaead2c4ad6350b1fb505ab49db971ae7ba937",
    "size": 370070
   },
-  "img/logo.png": {
-   "sha512": "8506703dd1c9028700f7b459822159ea852f2968da0d309503678ac0c1930dd1",
-   "size": 25948
+  "img/nav-icon.png": {
+   "sha512": "08b21939aa2c2a8761e6a41a19ae4dfa2efa0ed7309c0b6c976cfbc1ef1dc42e",
+   "size": 937
   },
-  "img/logo.svg": {
-   "sha512": "dc367c0d3622f741d9d400c8effbf5140256e4efaa4faf894d8757d5ce3cedaf",
-   "size": 4601
+  "img/nav-icon.svg": {
+   "sha512": "27ca47ed3acf67db6ce75190cb396c4b4501bb498e897dbf395e2de803807ade",
+   "size": 638
   },
   "img/unkown.png": {
    "sha512": "76a2a8625bc2d9f5ded29be919eaef14b8b67b472bbfbdad14c1c6e295a44b8e",
@@ -93,21 +98,9 @@
    "sha512": "5d80d4a564d674ea4b46adfecbb2ff6a6c5b1272c32b4caae7b29a7bedeee31e",
    "size": 3441
   },
-  "index.html": {
-   "sha512": "617b12ad645ee4741d2fce2b14afb22c7a8c4ffade2688237a48255a7a2ea3e7",
-   "size": 816
-  },
   "js-external/pngencoder.js": {
    "sha512": "2e0ebcf4d79213dbd382bd2d21a0c723d820febed7f1f572a0182a80cb49504e",
    "size": 54636
-  },
-  "js/all.js": {
-   "sha512": "bc9583d52e550ce949166c4ccd1479b00bf5512ba7bc5a9b5066dad1f0f5572b",
-   "size": 438738
-  },
-  "js/lib/jquery.min.js": {
-   "sha512": "dcff2b5c2b8625d3593a7531ff4ddcd633939cc9f7acfeb79c18a9e6038fdaa9",
-   "size": 86659
   },
   "languages/da.json": {
    "sha512": "5dc810fae4c6bfbcf2251ab28ff003a64155c4830cf79979f84868e41f48a64a",
@@ -129,41 +122,38 @@
    "sha512": "b4f0863769a636b4fdb58091e7ffe5e84e315995b59e7c0b70e2b87b6927a8f9",
    "size": 3540
   },
-  "languages/pt-br.json": {
-   "sha512": "35639162690da5af909485920748532db862ed0ee2309da0f287efada3c8058e",
-   "size": 8150
-  },
   "languages/tr.json": {
    "sha512": "d9df6b218bcf359766ee3416a0cf4b4a3e9181601a7106957f674b22a79aa07a",
    "size": 3428
   },
-  "languages/zh-tw.json": {
-   "sha512": "d9361d457ea7019e4fe60b60577eca3ed118e6240c2a7ba3f2c75ca02cfe85b4",
-   "size": 4988
-  },
   "languages/zh.json": {
-   "sha512": "444bec83c7e1bba758b531c5371c9d5f4a2505952682bea933073ae1cc95e243",
-   "size": 4991
+   "sha512": "fdcc53981de208ad50359d4abd427e0b1de5d6291c683b99e95b8bbefc2142f2",
+   "size": 3424
+  },
+  "zerome.ico": {
+   "sha512": "94fb8e604e75fdb1aabc04839ff18b384190f216361c60d57dc32b7a8f1f58b3",
+   "size": 1150
   }
  },
  "ignore": "(merged-.*|(js|css)/(?!all.(js|css)|lib/jquery.min.js)|^.git)",
  "inner_path": "content.json",
- "modified": 1539371675,
+ "modified": 1513204798,
  "postmessage_nonce_security": true,
  "settings": {
   "default_hubs": {
-   "1N9sU8qh3S4ei9PHE1qQyYPbcckJomvwMd": {
-    "description": "720Mb for you. Adapting itself for ZeroNet's actual needs. Runner: @Plasmmer.",
-    "title": "ChameleonHub"
+   "1SunAWK2VUT9GQK32MpwRfFPVgcBSJN9a": {
+    "description": "Hub for ZeroMe users. Runner: Nofish",
+    "title": "Sun hub"
    }
   }
  },
- "signers_sign": "HBUjj4/OxXLLpuPGm2AjbdSxH44jkisNNCtSAl7DVj9wXGPUEAVQ5qH5ZojbnRy8BykdVqWw7Bzv14AfnMl/yfI=",
+ "signers_sign": "G/UCyELE5shc5f/FSJSe2KvxGlZiS5fzvn7Ezhha0gN/QOFeznJtZWS61J20FfkGfHdp1HcpWv//anioez1iOW0=",
  "signs": {
-  "1PEEPJuD41shof53g3WauQKi4k4wVe3Vzu": "HG4PanJpcKyAy3dWdC1K6HBsqb7zu068HBAT0yO5/d7ReLc/jBB17WJYN0d2E1SYLrgk4xM/eJEBIadBv/2QSeI="
+  "1MeFqFfFFGQfa1J3gJyYYUvb5Lksczq7nH": "G/4+dyjTSYsqdEBCthX7vsLK8Iev7JGeQlsYwyvd28pmeNnmVrtJXVJbBqlvPOjmH4Nw29dj/aOgVNAxhLaeSpw="
  },
  "signs_required": 1,
- "title": "Peeper",
+ "title": "ZeroMe",
  "translate": ["js/all.js"],
- "zeronet_version": "0.6.3"
+ "viewport": "width=device-width, initial-scale=0.8",
+ "zeronet_version": "0.6.0"
 }

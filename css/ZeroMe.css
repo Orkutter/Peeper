@@ -28,7 +28,7 @@ h5 { font-weight: normal; color: rgba(0, 0, 0, 0.5) }
 .center { width: 960px; margin-left: auto; margin-right: auto; }
 
 /* Content */
-#Content { margin-top: 30px; margin-bottom: 50px }
+#Content { margin-top: 290px; margin-bottom: 50px }
 
 .content-signup { text-align: center }
 .content-signup .button-certselect { margin: 20px; display: inline-block; }
@@ -61,6 +61,56 @@ h5 { font-weight: normal; color: rgba(0, 0, 0, 0.5) }
 .animate-inback { transition: all 0.6s cubic-bezier(0.6, -0.28, 0.735, 0.045) !important; }
 .animate-in { transition: all 0.6s cubic-bezier(0.6, 0.04, 0.98, 0.335) !important; }
 .animate-out { transition: all 0.6s ease-out !important; }
+
+/* Speech bubbles */
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+.box3 {
+  width: 300px;
+  margin: 50px auto;
+  border-radius: 15px;
+  background: #fff;
+  padding: 20px;
+  text-align: center;
+  font-weight: 900;
+  font-family: arial;
+  position: relative;
+}
+
+
+/* speech bubble 13 */
+
+.sb13:before {
+  content: "";
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  border-left: 15px solid #fff;
+  border-right: 15px solid transparent;
+  border-top: 15px solid #fff;
+  border-bottom: 15px solid transparent;
+  right: -16px;
+  top: 0px;
+}
+
+
+/* speech bubble 14 */
+
+.sb14:before {
+  content: "";
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  border-left: 15px solid transparent;
+  border-right: 15px solid #fff;
+  border-top: 15px solid #fff;
+  border-bottom: 15px solid transparent;
+  left: -16px;
+  top: 0px;
+}
 
 @keyframes flash-in {
 	  0% { transform: scale(1.5); opacity: 0 }

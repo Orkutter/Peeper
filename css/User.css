@@ -30,17 +30,21 @@
 .user.card.profile { margin-bottom: 30px; background-color: rgba(255, 255, 255, 0.9); border: 1px solid #EEF0F1; }
 .no-transparent .user.card.profile { background-color: white; }
 
-.user.card .avatar { margin-top: -4px; position: absolute; margin-left: -60px; }
+.user.card .avatar { margin-top: -120px; position: absolute; margin-left: -30px; width: 200px; height: 200px; box-shadow: 0 0 15px 1px black; }
+.user.card .avatar:hover { box-shadow: 0px 0px 25px 5px #000; }
+
+.user.card.profile .name { margin-top: 85px; font-size:21px; }
+.user.card.profile .cert_user_id { font-size: 14px; }
 .user.card .follow-container { margin-left: -57px; text-align: center; margin-top: 30px; margin-bottom: 20px; }
 
 .users.gray .button-follow { border: 1px solid #aaa; color: #999; }
 .users.gray .button-follow:hover, .users.gray .button-follow:active { color: #2ecc71; }
 .users.gray .name { color: #333; }
 
-.user .uploadable .icon-upload { position: absolute; margin-left: -60px; z-index: 1; margin-top: -4px; opacity: 1; background-color: rgba(0, 0, 0, 0.5); background-position: 11px 11px; width: 50px; height: 50px; border-radius: 50%; }
+.user .uploadable .icon-upload { position: absolute; margin-left: -60px; z-index: 1; margin-top: -4px; opacity: 1; background-color: rgba(0, 0, 0, 0.5); background-position: center; width: 50px; height: 50px; border-radius: 50%; }
 .user .uploadable .icon-upload:hover { box-shadow: inset 0 0 0 5px rgb(245, 76, 25) !important }
 .bg-preview { border-radius: 5px }
-.bg-settings > .uploadable a.icon.icon-upload { border-radius: 0; margin-top: 0px; width: 160px; height: 86px; background-position: 65px 40px; border-radius: 5px }
+.bg-settings > .uploadable a.icon.icon-upload { border-radius: 0; margin-top: 0px; width: 160px; height: 86px; border-radius: 5px }
 .bg-settings > .uploadable a.icon.icon-upload:hover { box-shadow: inset 0 0 0 5px rgb(245, 76, 25) !important }
 .user.notseeding .button-follow { border-color: #E0E0E0; }
 .user.card.notseeding .button-follow { border-color: #EFEFEF; }

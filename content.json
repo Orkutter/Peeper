@@ -10,16 +10,16 @@
    "size": 35815
   },
   "README.md": {
-   "sha512": "b059fa3bc9d31bcdf39a6367c8408f15b4ba52406bccef39a2887b447d467051",
-   "size": 122
+   "sha512": "7cd99e3ecd35430f69962f1a8b8a450c9adfd82de031d392fcb92a2ffdd72919",
+   "size": 200
   },
   "badges/list.html": {
    "sha512": "4caf6dc45e9eaea8dcee07504961bc05ece1f2cdead4d5df555a9de64289e312",
    "size": 4635
   },
   "css/all.css": {
-   "sha512": "538eb340758373b46f991b13f87d21ef2abb3c8339c4fdedeaa3e0a221248aa8",
-   "size": 187012
+   "sha512": "52d9f6ca986656114c752443be5f37b2782419944caa978e71645771f197afd1",
+   "size": 193939
   },
   "dbschema.json": {
    "sha512": "0d0b7530908081c9e2226a65cef55cd3fc0aed6c7020c6ba2363391f4d7fc78c",
@@ -85,6 +85,14 @@
    "sha512": "dc367c0d3622f741d9d400c8effbf5140256e4efaa4faf894d8757d5ce3cedaf",
    "size": 4601
   },
+  "img/nav-icon.png": {
+   "sha512": "08b21939aa2c2a8761e6a41a19ae4dfa2efa0ed7309c0b6c976cfbc1ef1dc42e",
+   "size": 937
+  },
+  "img/nav-icon.svg": {
+   "sha512": "27ca47ed3acf67db6ce75190cb396c4b4501bb498e897dbf395e2de803807ade",
+   "size": 638
+  },
   "img/unkown.png": {
    "sha512": "76a2a8625bc2d9f5ded29be919eaef14b8b67b472bbfbdad14c1c6e295a44b8e",
    "size": 2665
@@ -102,16 +110,20 @@
    "size": 54636
   },
   "js/all.js": {
-   "sha512": "bc9583d52e550ce949166c4ccd1479b00bf5512ba7bc5a9b5066dad1f0f5572b",
-   "size": 438738
+   "sha512": "b642f9818211f48f39893e4f9952a3612fcdbb13694339c4cedf700ea55e675d",
+   "size": 448116
   },
   "js/lib/jquery.min.js": {
-   "sha512": "dcff2b5c2b8625d3593a7531ff4ddcd633939cc9f7acfeb79c18a9e6038fdaa9",
-   "size": 86659
+   "sha512": "20da3fe171c075635ef82f8de57644c7a50be45eb1207d96a51b5eadeaac17ee",
+   "size": 86663
   },
   "languages/da.json": {
    "sha512": "5dc810fae4c6bfbcf2251ab28ff003a64155c4830cf79979f84868e41f48a64a",
    "size": 3114
+  },
+  "languages/es.json": {
+   "sha512": "0adeecea5acda5be641950a85f21444d0256b9fbff194e0231de4f533e8dcded",
+   "size": 3328
   },
   "languages/fr.json": {
    "sha512": "193c033c87333fb0b5ab844433f5a299a27d6306e06b99d2df439f9f0d0ba7f5",
@@ -133,6 +145,10 @@
    "sha512": "35639162690da5af909485920748532db862ed0ee2309da0f287efada3c8058e",
    "size": 8150
   },
+  "languages/sk.json": {
+   "sha512": "ea93fc0b5137daf1219e92ed73e76783579442a65fd1fa5e957cf751d92b3d9a",
+   "size": 3599
+  },
   "languages/tr.json": {
    "sha512": "d9df6b218bcf359766ee3416a0cf4b4a3e9181601a7106957f674b22a79aa07a",
    "size": 3428
@@ -148,7 +164,7 @@
  },
  "ignore": "(merged-.*|(js|css)/(?!all.(js|css)|lib/jquery.min.js)|^.git)",
  "inner_path": "content.json",
- "modified": 1539371675,
+ "modified": 1539819686,
  "postmessage_nonce_security": true,
  "settings": {
   "default_hubs": {
@@ -160,7 +176,7 @@
  },
  "signers_sign": "HBUjj4/OxXLLpuPGm2AjbdSxH44jkisNNCtSAl7DVj9wXGPUEAVQ5qH5ZojbnRy8BykdVqWw7Bzv14AfnMl/yfI=",
  "signs": {
-  "1PEEPJuD41shof53g3WauQKi4k4wVe3Vzu": "HG4PanJpcKyAy3dWdC1K6HBsqb7zu068HBAT0yO5/d7ReLc/jBB17WJYN0d2E1SYLrgk4xM/eJEBIadBv/2QSeI="
+  "1PEEPJuD41shof53g3WauQKi4k4wVe3Vzu": "HDIwkgAt+OkMeNynyKYgcpjhsNLbiKGw4p0uYCkjHVBcHBLwTzP/doWKC8tLTbqXthVzHkfcoVwkGr+dGT/+nmw="
  },
  "signs_required": 1,
  "title": "Peeper",
